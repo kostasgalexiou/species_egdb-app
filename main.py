@@ -13,9 +13,6 @@ import tempfile
 import os
 from Bio.Blast.Applications import NcbiblastnCommandline, NcbiblastpCommandline, NcbiblastformatterCommandline
 from collections import OrderedDict as od
-import Bio 
-import Bio.Blast
-import Bio.Blast.Applications
 
 # Initialize connection.
 url: str = st.secrets['connections']['supabase']["SUPABASE_URL"]
@@ -138,8 +135,6 @@ def main():
                 # databases = supabase.storage.from_('blastDBs').download('Cannabis_sativa/chr02_1to10mbp.fa.fai').decode().split('\n')
 
                 if selected_database and fasta_input and perciden and evalue and wsize and lowcomplex:
-                    st.write(Bio.Blast.Applications.__file__, '$$$$$$$$$$$$$$$')
-                    st.write(os.listdir('/home/adminuser/venv/lib'))
 
                     with st.spinner('Generating blast output...'):
                         fp = tempfile.NamedTemporaryFile('w+')
