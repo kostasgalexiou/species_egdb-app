@@ -1,0 +1,1491 @@
+-rw-r--r-- 1 kalexiou kalexiou 442327 nov 11  2020 4656160.jpg
+-rw-rw-r-- 1 kalexiou kalexiou  78260 nov 16 22:48 contents_20231116.txt
+-rw-rw-r-- 1 kalexiou kalexiou   4733 nov 21 16:20 main.py
+-rw-rw-r-- 1 kalexiou kalexiou   3076 nov 21 16:13 supabase_conn.py
+-rw-rw-r-- 1 kalexiou kalexiou     15 nov 16 13:24 supabase_project-pass
+
+inputFile_preparation:
+total 99100
+drwxrwxr-x 2 kalexiou kalexiou     4096 nov 21 16:15 ./
+drwxrwxr-x 7 kalexiou kalexiou     4096 nov 21 22:26 ../
+-rw-rw-r-- 1 kalexiou kalexiou      301 nov 21 08:21 contents_20231120.txt
+-rw-rw-r-- 1 kalexiou kalexiou     2656 nov 21 15:16 extractinfo.py
+-rw-rw-r-- 1 kalexiou kalexiou  9029585 nov 21 00:32 GCF_900626175.2_cs10_genomic_no-comment-lines.gff.gz
+-rw-r--r-- 1 kalexiou kalexiou 18097576 nov 21 11:41 GCF_900626175.2_cs10_protein.fa
+-rw-r--r-- 1 kalexiou kalexiou 71390824 nov 21 11:41 GCF_900626175.2_cs10_rna.fna
+-rw-rw-r-- 1 kalexiou kalexiou  2930953 nov 21 16:04 gene_info.tsv
+-rw-rw-r-- 1 kalexiou kalexiou      767 nov 21 16:15 README.txt
+
+__pycache__:
+total 12
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 21 16:13 ./
+drwxrwxr-x 7 kalexiou kalexiou 4096 nov 21 22:26 ../
+-rw-rw-r-- 1 kalexiou kalexiou 3227 nov 21 16:13 supabase_conn.cpython-310.pyc
+
+venv:
+total 24
+drwxrwxr-x 4 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 7 kalexiou kalexiou 4096 nov 21 22:26 ../
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 bin/
+-rw-rw-r-- 1 kalexiou kalexiou   40 nov 16 13:15 .gitignore
+drwxrwxr-x 3 kalexiou kalexiou 4096 nov 16 13:15 lib/
+-rw-rw-r-- 1 kalexiou kalexiou  211 nov 16 13:15 pyvenv.cfg
+
+venv/bin:
+total 68
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 2173 nov 16 13:15 activate
+-rw-rw-r-- 1 kalexiou kalexiou 1465 nov 16 13:15 activate.csh
+-rw-rw-r-- 1 kalexiou kalexiou 3050 nov 16 13:15 activate.fish
+-rw-rw-r-- 1 kalexiou kalexiou 2619 nov 16 13:15 activate.nu
+-rw-rw-r-- 1 kalexiou kalexiou 1754 nov 16 13:15 activate.ps1
+-rw-rw-r-- 1 kalexiou kalexiou 1176 nov 16 13:15 activate_this.py
+-rw-rw-r-- 1 kalexiou kalexiou  682 nov 16 13:15 deactivate.nu
+-rwxrwxr-x 1 kalexiou kalexiou  270 nov 16 13:15 pip*
+-rwxrwxr-x 1 kalexiou kalexiou  270 nov 16 13:15 pip3*
+-rwxrwxr-x 1 kalexiou kalexiou  270 nov 16 13:15 pip-3.10*
+-rwxrwxr-x 1 kalexiou kalexiou  270 nov 16 13:15 pip3.10*
+lrwxrwxrwx 1 kalexiou kalexiou   19 nov 16 13:15 python -> /usr/bin/python3.10*
+lrwxrwxrwx 1 kalexiou kalexiou    6 nov 16 13:15 python3 -> python*
+lrwxrwxrwx 1 kalexiou kalexiou    6 nov 16 13:15 python3.10 -> python*
+-rwxrwxr-x 1 kalexiou kalexiou  257 nov 16 13:15 wheel*
+-rwxrwxr-x 1 kalexiou kalexiou  257 nov 16 13:15 wheel3*
+-rwxrwxr-x 1 kalexiou kalexiou  257 nov 16 13:15 wheel-3.10*
+-rwxrwxr-x 1 kalexiou kalexiou  257 nov 16 13:15 wheel3.10*
+
+venv/lib:
+total 12
+drwxrwxr-x 3 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou 4096 nov 16 13:15 ../
+drwxrwxr-x 3 kalexiou kalexiou 4096 nov 16 13:15 python3.10/
+
+venv/lib/python3.10:
+total 12
+drwxrwxr-x  3 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x  3 kalexiou kalexiou 4096 nov 16 13:15 ../
+drwxrwxr-x 11 kalexiou kalexiou 4096 nov 16 13:15 site-packages/
+
+venv/lib/python3.10/site-packages:
+total 60
+drwxrwxr-x 11 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x  3 kalexiou kalexiou 4096 nov 16 13:15 ../
+drwxrwxr-x  3 kalexiou kalexiou 4096 nov 16 13:15 _distutils_hack/
+-rw-rw-r--  1 kalexiou kalexiou  151 nov 16 13:15 distutils-precedence.pth
+drwxrwxr-x  4 kalexiou kalexiou 4096 nov 16 13:15 pip/
+drwxrwxr-x  2 kalexiou kalexiou 4096 nov 16 13:15 pip-22.3.1.dist-info/
+-rw-rw-r--  1 kalexiou kalexiou    0 nov 16 13:15 pip-22.3.1.virtualenv
+drwxrwxr-x  5 kalexiou kalexiou 4096 nov 16 13:15 pkg_resources/
+drwxrwxr-x  2 kalexiou kalexiou 4096 nov 16 13:15 __pycache__/
+drwxrwxr-x  7 kalexiou kalexiou 4096 nov 16 13:15 setuptools/
+drwxrwxr-x  2 kalexiou kalexiou 4096 nov 16 13:15 setuptools-65.5.1.dist-info/
+-rw-rw-r--  1 kalexiou kalexiou    0 nov 16 13:15 setuptools-65.5.1.virtualenv
+-rw-rw-r--  1 kalexiou kalexiou   18 nov 16 13:15 _virtualenv.pth
+-rw-rw-r--  1 kalexiou kalexiou 5640 nov 16 13:15 _virtualenv.py
+drwxrwxr-x  4 kalexiou kalexiou 4096 nov 16 13:15 wheel/
+drwxrwxr-x  2 kalexiou kalexiou 4096 nov 16 13:15 wheel-0.38.4.dist-info/
+-rw-rw-r--  1 kalexiou kalexiou    0 nov 16 13:15 wheel-0.38.4.virtualenv
+
+venv/lib/python3.10/site-packages/_distutils_hack:
+total 24
+drwxrwxr-x  3 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 11 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 6128 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou   44 nov 16 13:15 override.py
+drwxrwxr-x  2 kalexiou kalexiou 4096 nov 16 13:15 __pycache__/
+
+venv/lib/python3.10/site-packages/_distutils_hack/__pycache__:
+total 16
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 7602 nov 16 13:15 __init__.cpython-310.pyc
+
+venv/lib/python3.10/site-packages/pip:
+total 32
+drwxrwxr-x  4 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 11 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  357 nov 16 13:15 __init__.py
+drwxrwxr-x 15 kalexiou kalexiou 4096 nov 16 13:15 _internal/
+-rw-rw-r--  1 kalexiou kalexiou 1198 nov 16 13:15 __main__.py
+-rw-rw-r--  1 kalexiou kalexiou 1444 nov 16 13:15 __pip-runner__.py
+-rw-rw-r--  1 kalexiou kalexiou  286 nov 16 13:15 py.typed
+drwxrwxr-x 23 kalexiou kalexiou 4096 nov 16 13:15 _vendor/
+
+venv/lib/python3.10/site-packages/pip/_internal:
+total 164
+drwxrwxr-x 15 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x  4 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 10234 nov 16 13:15 build_env.py
+-rw-rw-r--  1 kalexiou kalexiou 10734 nov 16 13:15 cache.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 cli/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 commands/
+-rw-rw-r--  1 kalexiou kalexiou 13529 nov 16 13:15 configuration.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 distributions/
+-rw-rw-r--  1 kalexiou kalexiou 20942 nov 16 13:15 exceptions.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 index/
+-rw-rw-r--  1 kalexiou kalexiou   573 nov 16 13:15 __init__.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 locations/
+-rw-rw-r--  1 kalexiou kalexiou   340 nov 16 13:15 main.py
+drwxrwxr-x  3 kalexiou kalexiou  4096 nov 16 13:15 metadata/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 models/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 network/
+drwxrwxr-x  4 kalexiou kalexiou  4096 nov 16 13:15 operations/
+-rw-rw-r--  1 kalexiou kalexiou  7074 nov 16 13:15 pyproject.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 req/
+drwxrwxr-x  4 kalexiou kalexiou  4096 nov 16 13:15 resolution/
+-rw-rw-r--  1 kalexiou kalexiou  8020 nov 16 13:15 self_outdated_check.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 utils/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 vcs/
+-rw-rw-r--  1 kalexiou kalexiou 13079 nov 16 13:15 wheel_builder.py
+
+venv/lib/python3.10/site-packages/pip/_internal/cli:
+total 124
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  6676 nov 16 13:15 autocompletion.py
+-rw-rw-r--  1 kalexiou kalexiou  7842 nov 16 13:15 base_command.py
+-rw-rw-r--  1 kalexiou kalexiou 29381 nov 16 13:15 cmdoptions.py
+-rw-rw-r--  1 kalexiou kalexiou   774 nov 16 13:15 command_context.py
+-rw-rw-r--  1 kalexiou kalexiou   132 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  4338 nov 16 13:15 main_parser.py
+-rw-rw-r--  1 kalexiou kalexiou  2472 nov 16 13:15 main.py
+-rw-rw-r--  1 kalexiou kalexiou 10817 nov 16 13:15 parser.py
+-rw-rw-r--  1 kalexiou kalexiou  1968 nov 16 13:15 progress_bars.py
+-rw-rw-r--  1 kalexiou kalexiou 18172 nov 16 13:15 req_command.py
+-rw-rw-r--  1 kalexiou kalexiou  5118 nov 16 13:15 spinners.py
+-rw-rw-r--  1 kalexiou kalexiou   116 nov 16 13:15 status_codes.py
+
+venv/lib/python3.10/site-packages/pip/_internal/commands:
+total 160
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  7582 nov 16 13:15 cache.py
+-rw-rw-r--  1 kalexiou kalexiou  1685 nov 16 13:15 check.py
+-rw-rw-r--  1 kalexiou kalexiou  4129 nov 16 13:15 completion.py
+-rw-rw-r--  1 kalexiou kalexiou  9815 nov 16 13:15 configuration.py
+-rw-rw-r--  1 kalexiou kalexiou  6573 nov 16 13:15 debug.py
+-rw-rw-r--  1 kalexiou kalexiou  5289 nov 16 13:15 download.py
+-rw-rw-r--  1 kalexiou kalexiou  2951 nov 16 13:15 freeze.py
+-rw-rw-r--  1 kalexiou kalexiou  1703 nov 16 13:15 hash.py
+-rw-rw-r--  1 kalexiou kalexiou  1132 nov 16 13:15 help.py
+-rw-rw-r--  1 kalexiou kalexiou  4762 nov 16 13:15 index.py
+-rw-rw-r--  1 kalexiou kalexiou  3882 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  3374 nov 16 13:15 inspect.py
+-rw-rw-r--  1 kalexiou kalexiou 31726 nov 16 13:15 install.py
+-rw-rw-r--  1 kalexiou kalexiou 12343 nov 16 13:15 list.py
+-rw-rw-r--  1 kalexiou kalexiou  5697 nov 16 13:15 search.py
+-rw-rw-r--  1 kalexiou kalexiou  6129 nov 16 13:15 show.py
+-rw-rw-r--  1 kalexiou kalexiou  3680 nov 16 13:15 uninstall.py
+-rw-rw-r--  1 kalexiou kalexiou  7396 nov 16 13:15 wheel.py
+
+venv/lib/python3.10/site-packages/pip/_internal/distributions:
+total 32
+drwxrwxr-x  2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 1221 nov 16 13:15 base.py
+-rw-rw-r--  1 kalexiou kalexiou  858 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  729 nov 16 13:15 installed.py
+-rw-rw-r--  1 kalexiou kalexiou 6494 nov 16 13:15 sdist.py
+-rw-rw-r--  1 kalexiou kalexiou 1164 nov 16 13:15 wheel.py
+
+venv/lib/python3.10/site-packages/pip/_internal/index:
+total 80
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 16503 nov 16 13:15 collector.py
+-rw-rw-r--  1 kalexiou kalexiou    30 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou 37596 nov 16 13:15 package_finder.py
+-rw-rw-r--  1 kalexiou kalexiou  6557 nov 16 13:15 sources.py
+
+venv/lib/python3.10/site-packages/pip/_internal/locations:
+total 48
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  2573 nov 16 13:15 base.py
+-rw-rw-r--  1 kalexiou kalexiou  6302 nov 16 13:15 _distutils.py
+-rw-rw-r--  1 kalexiou kalexiou 17552 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  7867 nov 16 13:15 _sysconfig.py
+
+venv/lib/python3.10/site-packages/pip/_internal/metadata:
+total 64
+drwxrwxr-x  3 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 25277 nov 16 13:15 base.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 importlib/
+-rw-rw-r--  1 kalexiou kalexiou  4280 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  2595 nov 16 13:15 _json.py
+-rw-rw-r--  1 kalexiou kalexiou  9773 nov 16 13:15 pkg_resources.py
+
+venv/lib/python3.10/site-packages/pip/_internal/metadata/importlib:
+total 32
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 1882 nov 16 13:15 _compat.py
+-rw-rw-r-- 1 kalexiou kalexiou 8181 nov 16 13:15 _dists.py
+-rw-rw-r-- 1 kalexiou kalexiou 7457 nov 16 13:15 _envs.py
+-rw-rw-r-- 1 kalexiou kalexiou  107 nov 16 13:15 __init__.py
+
+venv/lib/python3.10/site-packages/pip/_internal/models:
+total 80
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou   990 nov 16 13:15 candidate.py
+-rw-rw-r--  1 kalexiou kalexiou  5877 nov 16 13:15 direct_url.py
+-rw-rw-r--  1 kalexiou kalexiou  2520 nov 16 13:15 format_control.py
+-rw-rw-r--  1 kalexiou kalexiou  1030 nov 16 13:15 index.py
+-rw-rw-r--  1 kalexiou kalexiou    63 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  2617 nov 16 13:15 installation_report.py
+-rw-rw-r--  1 kalexiou kalexiou 18083 nov 16 13:15 link.py
+-rw-rw-r--  1 kalexiou kalexiou   738 nov 16 13:15 scheme.py
+-rw-rw-r--  1 kalexiou kalexiou  4644 nov 16 13:15 search_scope.py
+-rw-rw-r--  1 kalexiou kalexiou  1907 nov 16 13:15 selection_prefs.py
+-rw-rw-r--  1 kalexiou kalexiou  3858 nov 16 13:15 target_python.py
+-rw-rw-r--  1 kalexiou kalexiou  3600 nov 16 13:15 wheel.py
+
+venv/lib/python3.10/site-packages/pip/_internal/network:
+total 72
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 12190 nov 16 13:15 auth.py
+-rw-rw-r--  1 kalexiou kalexiou  2145 nov 16 13:15 cache.py
+-rw-rw-r--  1 kalexiou kalexiou  6096 nov 16 13:15 download.py
+-rw-rw-r--  1 kalexiou kalexiou    50 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  7638 nov 16 13:15 lazy_wheel.py
+-rw-rw-r--  1 kalexiou kalexiou 18443 nov 16 13:15 session.py
+-rw-rw-r--  1 kalexiou kalexiou  4073 nov 16 13:15 utils.py
+-rw-rw-r--  1 kalexiou kalexiou  1791 nov 16 13:15 xmlrpc.py
+
+venv/lib/python3.10/site-packages/pip/_internal/operations:
+total 64
+drwxrwxr-x  4 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou  4096 nov 16 13:15 ../
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 build/
+-rw-rw-r--  1 kalexiou kalexiou  5109 nov 16 13:15 check.py
+-rw-rw-r--  1 kalexiou kalexiou  9784 nov 16 13:15 freeze.py
+-rw-rw-r--  1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 install/
+-rw-rw-r--  1 kalexiou kalexiou 25091 nov 16 13:15 prepare.py
+
+venv/lib/python3.10/site-packages/pip/_internal/operations/build:
+total 40
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 4133 nov 16 13:15 build_tracker.py
+-rw-rw-r-- 1 kalexiou kalexiou    0 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 1456 nov 16 13:15 metadata_editable.py
+-rw-rw-r-- 1 kalexiou kalexiou 2198 nov 16 13:15 metadata_legacy.py
+-rw-rw-r-- 1 kalexiou kalexiou 1404 nov 16 13:15 metadata.py
+-rw-rw-r-- 1 kalexiou kalexiou 1405 nov 16 13:15 wheel_editable.py
+-rw-rw-r-- 1 kalexiou kalexiou 3064 nov 16 13:15 wheel_legacy.py
+-rw-rw-r-- 1 kalexiou kalexiou 1063 nov 16 13:15 wheel.py
+
+venv/lib/python3.10/site-packages/pip/_internal/operations/install:
+total 52
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  1354 nov 16 13:15 editable_legacy.py
+-rw-rw-r-- 1 kalexiou kalexiou    51 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou  4105 nov 16 13:15 legacy.py
+-rw-rw-r-- 1 kalexiou kalexiou 27407 nov 16 13:15 wheel.py
+
+venv/lib/python3.10/site-packages/pip/_internal/req:
+total 116
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 16611 nov 16 13:15 constructors.py
+-rw-rw-r--  1 kalexiou kalexiou  2807 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou 17646 nov 16 13:15 req_file.py
+-rw-rw-r--  1 kalexiou kalexiou 35600 nov 16 13:15 req_install.py
+-rw-rw-r--  1 kalexiou kalexiou  2858 nov 16 13:15 req_set.py
+-rw-rw-r--  1 kalexiou kalexiou 24045 nov 16 13:15 req_uninstall.py
+
+venv/lib/python3.10/site-packages/pip/_internal/resolution:
+total 20
+drwxrwxr-x  4 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  583 nov 16 13:15 base.py
+-rw-rw-r--  1 kalexiou kalexiou    0 nov 16 13:15 __init__.py
+drwxrwxr-x  2 kalexiou kalexiou 4096 nov 16 13:15 legacy/
+drwxrwxr-x  2 kalexiou kalexiou 4096 nov 16 13:15 resolvelib/
+
+venv/lib/python3.10/site-packages/pip/_internal/resolution/legacy:
+total 32
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 24129 nov 16 13:15 resolver.py
+
+venv/lib/python3.10/site-packages/pip/_internal/resolution/resolvelib:
+total 108
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  5220 nov 16 13:15 base.py
+-rw-rw-r-- 1 kalexiou kalexiou 18963 nov 16 13:15 candidates.py
+-rw-rw-r-- 1 kalexiou kalexiou 27878 nov 16 13:15 factory.py
+-rw-rw-r-- 1 kalexiou kalexiou  5705 nov 16 13:15 found_candidates.py
+-rw-rw-r-- 1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou  9914 nov 16 13:15 provider.py
+-rw-rw-r-- 1 kalexiou kalexiou  2526 nov 16 13:15 reporter.py
+-rw-rw-r-- 1 kalexiou kalexiou  5455 nov 16 13:15 requirements.py
+-rw-rw-r-- 1 kalexiou kalexiou 11533 nov 16 13:15 resolver.py
+
+venv/lib/python3.10/site-packages/pip/_internal/utils:
+total 188
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  1665 nov 16 13:15 appdirs.py
+-rw-rw-r--  1 kalexiou kalexiou  5377 nov 16 13:15 compatibility_tags.py
+-rw-rw-r--  1 kalexiou kalexiou  1884 nov 16 13:15 compat.py
+-rw-rw-r--  1 kalexiou kalexiou   242 nov 16 13:15 datetime.py
+-rw-rw-r--  1 kalexiou kalexiou  5764 nov 16 13:15 deprecation.py
+-rw-rw-r--  1 kalexiou kalexiou  3206 nov 16 13:15 direct_url_helpers.py
+-rw-rw-r--  1 kalexiou kalexiou  1115 nov 16 13:15 distutils_args.py
+-rw-rw-r--  1 kalexiou kalexiou  2203 nov 16 13:15 egg_link.py
+-rw-rw-r--  1 kalexiou kalexiou  1169 nov 16 13:15 encoding.py
+-rw-rw-r--  1 kalexiou kalexiou  3064 nov 16 13:15 entrypoints.py
+-rw-rw-r--  1 kalexiou kalexiou  5122 nov 16 13:15 filesystem.py
+-rw-rw-r--  1 kalexiou kalexiou   716 nov 16 13:15 filetypes.py
+-rw-rw-r--  1 kalexiou kalexiou  3110 nov 16 13:15 glibc.py
+-rw-rw-r--  1 kalexiou kalexiou  4831 nov 16 13:15 hashes.py
+-rw-rw-r--  1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou   795 nov 16 13:15 inject_securetransport.py
+-rw-rw-r--  1 kalexiou kalexiou 11632 nov 16 13:15 logging.py
+-rw-rw-r--  1 kalexiou kalexiou  1015 nov 16 13:15 _log.py
+-rw-rw-r--  1 kalexiou kalexiou 21617 nov 16 13:15 misc.py
+-rw-rw-r--  1 kalexiou kalexiou  1193 nov 16 13:15 models.py
+-rw-rw-r--  1 kalexiou kalexiou  2108 nov 16 13:15 packaging.py
+-rw-rw-r--  1 kalexiou kalexiou  5662 nov 16 13:15 setuptools_build.py
+-rw-rw-r--  1 kalexiou kalexiou  9197 nov 16 13:15 subprocess.py
+-rw-rw-r--  1 kalexiou kalexiou  7702 nov 16 13:15 temp_dir.py
+-rw-rw-r--  1 kalexiou kalexiou  8821 nov 16 13:15 unpacking.py
+-rw-rw-r--  1 kalexiou kalexiou  1759 nov 16 13:15 urls.py
+-rw-rw-r--  1 kalexiou kalexiou  3459 nov 16 13:15 virtualenv.py
+-rw-rw-r--  1 kalexiou kalexiou  4549 nov 16 13:15 wheel.py
+
+venv/lib/python3.10/site-packages/pip/_internal/vcs:
+total 80
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 15 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  3518 nov 16 13:15 bazaar.py
+-rw-rw-r--  1 kalexiou kalexiou 18116 nov 16 13:15 git.py
+-rw-rw-r--  1 kalexiou kalexiou   596 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  5238 nov 16 13:15 mercurial.py
+-rw-rw-r--  1 kalexiou kalexiou 11728 nov 16 13:15 subversion.py
+-rw-rw-r--  1 kalexiou kalexiou 22811 nov 16 13:15 versioncontrol.py
+
+venv/lib/python3.10/site-packages/pip/_vendor:
+total 220
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x  4 kalexiou kalexiou  4096 nov 16 13:15 ../
+drwxrwxr-x  3 kalexiou kalexiou  4096 nov 16 13:15 cachecontrol/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 certifi/
+drwxrwxr-x  4 kalexiou kalexiou  4096 nov 16 13:15 chardet/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 colorama/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 distlib/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 distro/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 idna/
+-rw-rw-r--  1 kalexiou kalexiou  4966 nov 16 13:15 __init__.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 msgpack/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 packaging/
+drwxrwxr-x  3 kalexiou kalexiou  4096 nov 16 13:15 pep517/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 pkg_resources/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 platformdirs/
+drwxrwxr-x  6 kalexiou kalexiou  4096 nov 16 13:15 pygments/
+drwxrwxr-x  3 kalexiou kalexiou  4096 nov 16 13:15 pyparsing/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 requests/
+drwxrwxr-x  3 kalexiou kalexiou  4096 nov 16 13:15 resolvelib/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 rich/
+-rw-rw-r--  1 kalexiou kalexiou 34549 nov 16 13:15 six.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 tenacity/
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 tomli/
+-rw-rw-r--  1 kalexiou kalexiou 80114 nov 16 13:15 typing_extensions.py
+drwxrwxr-x  5 kalexiou kalexiou  4096 nov 16 13:15 urllib3/
+-rw-rw-r--  1 kalexiou kalexiou   469 nov 16 13:15 vendor.txt
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 webencodings/
+
+venv/lib/python3.10/site-packages/pip/_vendor/cachecontrol:
+total 80
+drwxrwxr-x  3 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  5033 nov 16 13:15 adapter.py
+-rw-rw-r--  1 kalexiou kalexiou  1535 nov 16 13:15 cache.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 caches/
+-rw-rw-r--  1 kalexiou kalexiou  1379 nov 16 13:15 _cmd.py
+-rw-rw-r--  1 kalexiou kalexiou   778 nov 16 13:15 compat.py
+-rw-rw-r--  1 kalexiou kalexiou 16416 nov 16 13:15 controller.py
+-rw-rw-r--  1 kalexiou kalexiou  3946 nov 16 13:15 filewrapper.py
+-rw-rw-r--  1 kalexiou kalexiou  4154 nov 16 13:15 heuristics.py
+-rw-rw-r--  1 kalexiou kalexiou   465 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  7105 nov 16 13:15 serialize.py
+-rw-rw-r--  1 kalexiou kalexiou   774 nov 16 13:15 wrapper.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/cachecontrol/caches:
+total 24
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 5271 nov 16 13:15 file_cache.py
+-rw-rw-r-- 1 kalexiou kalexiou  242 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 1033 nov 16 13:15 redis_cache.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/certifi:
+total 304
+drwxrwxr-x  2 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 286370 nov 16 13:15 cacert.pem
+-rw-rw-r--  1 kalexiou kalexiou   4279 nov 16 13:15 core.py
+-rw-rw-r--  1 kalexiou kalexiou     94 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou    255 nov 16 13:15 __main__.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/chardet:
+total 1156
+drwxrwxr-x  4 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  31274 nov 16 13:15 big5freq.py
+-rw-rw-r--  1 kalexiou kalexiou   1741 nov 16 13:15 big5prober.py
+-rw-rw-r--  1 kalexiou kalexiou   9608 nov 16 13:15 chardistribution.py
+-rw-rw-r--  1 kalexiou kalexiou   3817 nov 16 13:15 charsetgroupprober.py
+-rw-rw-r--  1 kalexiou kalexiou   4801 nov 16 13:15 charsetprober.py
+drwxrwxr-x  2 kalexiou kalexiou   4096 nov 16 13:15 cli/
+-rw-rw-r--  1 kalexiou kalexiou   3559 nov 16 13:15 codingstatemachine.py
+-rw-rw-r--  1 kalexiou kalexiou   1838 nov 16 13:15 cp949prober.py
+-rw-rw-r--  1 kalexiou kalexiou   1619 nov 16 13:15 enums.py
+-rw-rw-r--  1 kalexiou kalexiou   3864 nov 16 13:15 escprober.py
+-rw-rw-r--  1 kalexiou kalexiou  12021 nov 16 13:15 escsm.py
+-rw-rw-r--  1 kalexiou kalexiou   3676 nov 16 13:15 eucjpprober.py
+-rw-rw-r--  1 kalexiou kalexiou  13566 nov 16 13:15 euckrfreq.py
+-rw-rw-r--  1 kalexiou kalexiou   1731 nov 16 13:15 euckrprober.py
+-rw-rw-r--  1 kalexiou kalexiou  36913 nov 16 13:15 euctwfreq.py
+-rw-rw-r--  1 kalexiou kalexiou   1731 nov 16 13:15 euctwprober.py
+-rw-rw-r--  1 kalexiou kalexiou  20735 nov 16 13:15 gb2312freq.py
+-rw-rw-r--  1 kalexiou kalexiou   1737 nov 16 13:15 gb2312prober.py
+-rw-rw-r--  1 kalexiou kalexiou  13919 nov 16 13:15 hebrewprober.py
+-rw-rw-r--  1 kalexiou kalexiou   3705 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  25796 nov 16 13:15 jisfreq.py
+-rw-rw-r--  1 kalexiou kalexiou  42498 nov 16 13:15 johabfreq.py
+-rw-rw-r--  1 kalexiou kalexiou   1730 nov 16 13:15 johabprober.py
+-rw-rw-r--  1 kalexiou kalexiou  26797 nov 16 13:15 jpcntx.py
+-rw-rw-r--  1 kalexiou kalexiou 104562 nov 16 13:15 langbulgarianmodel.py
+-rw-rw-r--  1 kalexiou kalexiou  98484 nov 16 13:15 langgreekmodel.py
+-rw-rw-r--  1 kalexiou kalexiou  98196 nov 16 13:15 langhebrewmodel.py
+-rw-rw-r--  1 kalexiou kalexiou 101363 nov 16 13:15 langhungarianmodel.py
+-rw-rw-r--  1 kalexiou kalexiou 128035 nov 16 13:15 langrussianmodel.py
+-rw-rw-r--  1 kalexiou kalexiou 102774 nov 16 13:15 langthaimodel.py
+-rw-rw-r--  1 kalexiou kalexiou  95372 nov 16 13:15 langturkishmodel.py
+-rw-rw-r--  1 kalexiou kalexiou   5260 nov 16 13:15 latin1prober.py
+-rw-rw-r--  1 kalexiou kalexiou   3367 nov 16 13:15 mbcharsetprober.py
+-rw-rw-r--  1 kalexiou kalexiou   2056 nov 16 13:15 mbcsgroupprober.py
+-rw-rw-r--  1 kalexiou kalexiou  30068 nov 16 13:15 mbcssm.py
+drwxrwxr-x  2 kalexiou kalexiou   4096 nov 16 13:15 metadata/
+-rw-rw-r--  1 kalexiou kalexiou   6199 nov 16 13:15 sbcharsetprober.py
+-rw-rw-r--  1 kalexiou kalexiou   4129 nov 16 13:15 sbcsgroupprober.py
+-rw-rw-r--  1 kalexiou kalexiou   3749 nov 16 13:15 sjisprober.py
+-rw-rw-r--  1 kalexiou kalexiou  13288 nov 16 13:15 universaldetector.py
+-rw-rw-r--  1 kalexiou kalexiou   8289 nov 16 13:15 utf1632prober.py
+-rw-rw-r--  1 kalexiou kalexiou   2709 nov 16 13:15 utf8prober.py
+-rw-rw-r--  1 kalexiou kalexiou    242 nov 16 13:15 version.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/chardet/cli:
+total 12
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 2406 nov 16 13:15 chardetect.py
+-rw-rw-r-- 1 kalexiou kalexiou    0 nov 16 13:15 __init__.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/chardet/metadata:
+total 24
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 13280 nov 16 13:15 languages.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/colorama:
+total 48
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  2522 nov 16 13:15 ansi.py
+-rw-rw-r--  1 kalexiou kalexiou 10830 nov 16 13:15 ansitowin32.py
+-rw-rw-r--  1 kalexiou kalexiou  1915 nov 16 13:15 initialise.py
+-rw-rw-r--  1 kalexiou kalexiou   239 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  5404 nov 16 13:15 win32.py
+-rw-rw-r--  1 kalexiou kalexiou  6438 nov 16 13:15 winterm.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/distlib:
+total 1160
+drwxrwxr-x  2 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  41259 nov 16 13:15 compat.py
+-rw-rw-r--  1 kalexiou kalexiou  51697 nov 16 13:15 database.py
+-rw-rw-r--  1 kalexiou kalexiou  20834 nov 16 13:15 index.py
+-rw-rw-r--  1 kalexiou kalexiou    581 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  51991 nov 16 13:15 locators.py
+-rw-rw-r--  1 kalexiou kalexiou  14811 nov 16 13:15 manifest.py
+-rw-rw-r--  1 kalexiou kalexiou   5058 nov 16 13:15 markers.py
+-rw-rw-r--  1 kalexiou kalexiou  39801 nov 16 13:15 metadata.py
+-rw-rw-r--  1 kalexiou kalexiou  10820 nov 16 13:15 resources.py
+-rw-rw-r--  1 kalexiou kalexiou  18102 nov 16 13:15 scripts.py
+-rw-rw-r--  1 kalexiou kalexiou  97792 nov 16 13:15 t32.exe
+-rw-rw-r--  1 kalexiou kalexiou 182784 nov 16 13:15 t64-arm.exe
+-rw-rw-r--  1 kalexiou kalexiou 108032 nov 16 13:15 t64.exe
+-rw-rw-r--  1 kalexiou kalexiou  66262 nov 16 13:15 util.py
+-rw-rw-r--  1 kalexiou kalexiou  23513 nov 16 13:15 version.py
+-rw-rw-r--  1 kalexiou kalexiou  91648 nov 16 13:15 w32.exe
+-rw-rw-r--  1 kalexiou kalexiou 168448 nov 16 13:15 w64-arm.exe
+-rw-rw-r--  1 kalexiou kalexiou 101888 nov 16 13:15 w64.exe
+-rw-rw-r--  1 kalexiou kalexiou  43898 nov 16 13:15 wheel.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/distro:
+total 64
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 48841 nov 16 13:15 distro.py
+-rw-rw-r--  1 kalexiou kalexiou   981 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou    64 nov 16 13:15 __main__.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/idna:
+total 292
+drwxrwxr-x  2 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou   3374 nov 16 13:15 codec.py
+-rw-rw-r--  1 kalexiou kalexiou    321 nov 16 13:15 compat.py
+-rw-rw-r--  1 kalexiou kalexiou  12950 nov 16 13:15 core.py
+-rw-rw-r--  1 kalexiou kalexiou  44375 nov 16 13:15 idnadata.py
+-rw-rw-r--  1 kalexiou kalexiou    849 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou   1881 nov 16 13:15 intranges.py
+-rw-rw-r--  1 kalexiou kalexiou     21 nov 16 13:15 package_data.py
+-rw-rw-r--  1 kalexiou kalexiou 206539 nov 16 13:15 uts46data.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/msgpack:
+total 60
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  1081 nov 16 13:15 exceptions.py
+-rw-rw-r--  1 kalexiou kalexiou  6080 nov 16 13:15 ext.py
+-rw-rw-r--  1 kalexiou kalexiou 34557 nov 16 13:15 fallback.py
+-rw-rw-r--  1 kalexiou kalexiou  1132 nov 16 13:15 __init__.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/packaging:
+total 132
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou   661 nov 16 13:15 __about__.py
+-rw-rw-r--  1 kalexiou kalexiou   497 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou 11488 nov 16 13:15 _manylinux.py
+-rw-rw-r--  1 kalexiou kalexiou  8487 nov 16 13:15 markers.py
+-rw-rw-r--  1 kalexiou kalexiou  4378 nov 16 13:15 _musllinux.py
+-rw-rw-r--  1 kalexiou kalexiou  4676 nov 16 13:15 requirements.py
+-rw-rw-r--  1 kalexiou kalexiou 30110 nov 16 13:15 specifiers.py
+-rw-rw-r--  1 kalexiou kalexiou  1431 nov 16 13:15 _structures.py
+-rw-rw-r--  1 kalexiou kalexiou 15699 nov 16 13:15 tags.py
+-rw-rw-r--  1 kalexiou kalexiou  4200 nov 16 13:15 utils.py
+-rw-rw-r--  1 kalexiou kalexiou 14665 nov 16 13:15 version.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/pep517:
+total 68
+drwxrwxr-x  3 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  3443 nov 16 13:15 build.py
+-rw-rw-r--  1 kalexiou kalexiou  6083 nov 16 13:15 check.py
+-rw-rw-r--  1 kalexiou kalexiou  3994 nov 16 13:15 colorlog.py
+-rw-rw-r--  1 kalexiou kalexiou   138 nov 16 13:15 _compat.py
+-rw-rw-r--  1 kalexiou kalexiou   607 nov 16 13:15 dirtools.py
+-rw-rw-r--  1 kalexiou kalexiou  6081 nov 16 13:15 envbuild.py
+-rw-rw-r--  1 kalexiou kalexiou   130 nov 16 13:15 __init__.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 in_process/
+-rw-rw-r--  1 kalexiou kalexiou  2520 nov 16 13:15 meta.py
+-rw-rw-r--  1 kalexiou kalexiou 12721 nov 16 13:15 wrappers.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/pep517/in_process:
+total 24
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou   872 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 10801 nov 16 13:15 _in_process.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/pkg_resources:
+total 120
+drwxrwxr-x  2 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 108287 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou    562 nov 16 13:15 py31compat.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/platformdirs:
+total 64
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  4068 nov 16 13:15 android.py
+-rw-rw-r--  1 kalexiou kalexiou  4910 nov 16 13:15 api.py
+-rw-rw-r--  1 kalexiou kalexiou 12831 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  2655 nov 16 13:15 macos.py
+-rw-rw-r--  1 kalexiou kalexiou  1176 nov 16 13:15 __main__.py
+-rw-rw-r--  1 kalexiou kalexiou  6910 nov 16 13:15 unix.py
+-rw-rw-r--  1 kalexiou kalexiou    78 nov 16 13:15 version.py
+-rw-rw-r--  1 kalexiou kalexiou  6439 nov 16 13:15 windows.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/pygments:
+total 216
+drwxrwxr-x  6 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 23685 nov 16 13:15 cmdline.py
+-rw-rw-r--  1 kalexiou kalexiou  1697 nov 16 13:15 console.py
+-rw-rw-r--  1 kalexiou kalexiou  1938 nov 16 13:15 filter.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 filters/
+-rw-rw-r--  1 kalexiou kalexiou  2917 nov 16 13:15 formatter.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 formatters/
+-rw-rw-r--  1 kalexiou kalexiou  2999 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou 32005 nov 16 13:15 lexer.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 lexers/
+-rw-rw-r--  1 kalexiou kalexiou   353 nov 16 13:15 __main__.py
+-rw-rw-r--  1 kalexiou kalexiou   986 nov 16 13:15 modeline.py
+-rw-rw-r--  1 kalexiou kalexiou  2591 nov 16 13:15 plugin.py
+-rw-rw-r--  1 kalexiou kalexiou  3072 nov 16 13:15 regexopt.py
+-rw-rw-r--  1 kalexiou kalexiou  3092 nov 16 13:15 scanner.py
+-rw-rw-r--  1 kalexiou kalexiou  4630 nov 16 13:15 sphinxext.py
+-rw-rw-r--  1 kalexiou kalexiou  6257 nov 16 13:15 style.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 styles/
+-rw-rw-r--  1 kalexiou kalexiou  6184 nov 16 13:15 token.py
+-rw-rw-r--  1 kalexiou kalexiou 63187 nov 16 13:15 unistring.py
+-rw-rw-r--  1 kalexiou kalexiou  9110 nov 16 13:15 util.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/pygments/filters:
+total 48
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 6 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 40386 nov 16 13:15 __init__.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/pygments/formatters:
+total 172
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 6 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  3314 nov 16 13:15 bbcode.py
+-rw-rw-r-- 1 kalexiou kalexiou  5086 nov 16 13:15 groff.py
+-rw-rw-r-- 1 kalexiou kalexiou 35441 nov 16 13:15 html.py
+-rw-rw-r-- 1 kalexiou kalexiou 21938 nov 16 13:15 img.py
+-rw-rw-r-- 1 kalexiou kalexiou  4810 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou  5871 nov 16 13:15 irc.py
+-rw-rw-r-- 1 kalexiou kalexiou 19351 nov 16 13:15 latex.py
+-rw-rw-r-- 1 kalexiou kalexiou  4104 nov 16 13:15 _mapping.py
+-rw-rw-r-- 1 kalexiou kalexiou  5073 nov 16 13:15 other.py
+-rw-rw-r-- 1 kalexiou kalexiou  2212 nov 16 13:15 pangomarkup.py
+-rw-rw-r-- 1 kalexiou kalexiou  5014 nov 16 13:15 rtf.py
+-rw-rw-r-- 1 kalexiou kalexiou  7335 nov 16 13:15 svg.py
+-rw-rw-r-- 1 kalexiou kalexiou 11753 nov 16 13:15 terminal256.py
+-rw-rw-r-- 1 kalexiou kalexiou  4674 nov 16 13:15 terminal.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/pygments/lexers:
+total 148
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 6 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 11174 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 70232 nov 16 13:15 _mapping.py
+-rw-rw-r-- 1 kalexiou kalexiou 53376 nov 16 13:15 python.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/pygments/styles:
+total 12
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 6 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 3419 nov 16 13:15 __init__.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/pyparsing:
+total 376
+drwxrwxr-x  3 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou   6426 nov 16 13:15 actions.py
+-rw-rw-r--  1 kalexiou kalexiou  12936 nov 16 13:15 common.py
+-rw-rw-r--  1 kalexiou kalexiou 213344 nov 16 13:15 core.py
+drwxrwxr-x  2 kalexiou kalexiou   4096 nov 16 13:15 diagram/
+-rw-rw-r--  1 kalexiou kalexiou   9023 nov 16 13:15 exceptions.py
+-rw-rw-r--  1 kalexiou kalexiou  39129 nov 16 13:15 helpers.py
+-rw-rw-r--  1 kalexiou kalexiou   9171 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  25341 nov 16 13:15 results.py
+-rw-rw-r--  1 kalexiou kalexiou  13402 nov 16 13:15 testing.py
+-rw-rw-r--  1 kalexiou kalexiou  10787 nov 16 13:15 unicode.py
+-rw-rw-r--  1 kalexiou kalexiou   6805 nov 16 13:15 util.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/pyparsing/diagram:
+total 32
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 23685 nov 16 13:15 __init__.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/requests:
+total 228
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 21443 nov 16 13:15 adapters.py
+-rw-rw-r--  1 kalexiou kalexiou  6377 nov 16 13:15 api.py
+-rw-rw-r--  1 kalexiou kalexiou 10187 nov 16 13:15 auth.py
+-rw-rw-r--  1 kalexiou kalexiou   575 nov 16 13:15 certs.py
+-rw-rw-r--  1 kalexiou kalexiou  1286 nov 16 13:15 compat.py
+-rw-rw-r--  1 kalexiou kalexiou 18560 nov 16 13:15 cookies.py
+-rw-rw-r--  1 kalexiou kalexiou  3823 nov 16 13:15 exceptions.py
+-rw-rw-r--  1 kalexiou kalexiou  3879 nov 16 13:15 help.py
+-rw-rw-r--  1 kalexiou kalexiou   733 nov 16 13:15 hooks.py
+-rw-rw-r--  1 kalexiou kalexiou  5178 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  1397 nov 16 13:15 _internal_utils.py
+-rw-rw-r--  1 kalexiou kalexiou 35287 nov 16 13:15 models.py
+-rw-rw-r--  1 kalexiou kalexiou   695 nov 16 13:15 packages.py
+-rw-rw-r--  1 kalexiou kalexiou 30180 nov 16 13:15 sessions.py
+-rw-rw-r--  1 kalexiou kalexiou  4235 nov 16 13:15 status_codes.py
+-rw-rw-r--  1 kalexiou kalexiou  2912 nov 16 13:15 structures.py
+-rw-rw-r--  1 kalexiou kalexiou 33240 nov 16 13:15 utils.py
+-rw-rw-r--  1 kalexiou kalexiou   440 nov 16 13:15 __version__.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/resolvelib:
+total 56
+drwxrwxr-x  3 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 compat/
+-rw-rw-r--  1 kalexiou kalexiou   537 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  5872 nov 16 13:15 providers.py
+-rw-rw-r--  1 kalexiou kalexiou  1583 nov 16 13:15 reporters.py
+-rw-rw-r--  1 kalexiou kalexiou 17592 nov 16 13:15 resolvers.py
+-rw-rw-r--  1 kalexiou kalexiou  4794 nov 16 13:15 structs.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/resolvelib/compat:
+total 12
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  156 nov 16 13:15 collections_abc.py
+-rw-rw-r-- 1 kalexiou kalexiou    0 nov 16 13:15 __init__.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/rich:
+total 1032
+drwxrwxr-x  2 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou    890 nov 16 13:15 abc.py
+-rw-rw-r--  1 kalexiou kalexiou  10368 nov 16 13:15 align.py
+-rw-rw-r--  1 kalexiou kalexiou   6820 nov 16 13:15 ansi.py
+-rw-rw-r--  1 kalexiou kalexiou   3264 nov 16 13:15 bar.py
+-rw-rw-r--  1 kalexiou kalexiou   9864 nov 16 13:15 box.py
+-rw-rw-r--  1 kalexiou kalexiou   4503 nov 16 13:15 cells.py
+-rw-rw-r--  1 kalexiou kalexiou  10096 nov 16 13:15 _cell_widths.py
+-rw-rw-r--  1 kalexiou kalexiou  17957 nov 16 13:15 color.py
+-rw-rw-r--  1 kalexiou kalexiou   1054 nov 16 13:15 color_triplet.py
+-rw-rw-r--  1 kalexiou kalexiou   7131 nov 16 13:15 columns.py
+-rw-rw-r--  1 kalexiou kalexiou  95885 nov 16 13:15 console.py
+-rw-rw-r--  1 kalexiou kalexiou   1288 nov 16 13:15 constrain.py
+-rw-rw-r--  1 kalexiou kalexiou   5497 nov 16 13:15 containers.py
+-rw-rw-r--  1 kalexiou kalexiou   6630 nov 16 13:15 control.py
+-rw-rw-r--  1 kalexiou kalexiou   7954 nov 16 13:15 default_styles.py
+-rw-rw-r--  1 kalexiou kalexiou    972 nov 16 13:15 diagnose.py
+-rw-rw-r--  1 kalexiou kalexiou 140235 nov 16 13:15 _emoji_codes.py
+-rw-rw-r--  1 kalexiou kalexiou   2501 nov 16 13:15 emoji.py
+-rw-rw-r--  1 kalexiou kalexiou   1064 nov 16 13:15 _emoji_replace.py
+-rw-rw-r--  1 kalexiou kalexiou    642 nov 16 13:15 errors.py
+-rw-rw-r--  1 kalexiou kalexiou   2114 nov 16 13:15 _export_format.py
+-rw-rw-r--  1 kalexiou kalexiou    265 nov 16 13:15 _extension.py
+-rw-rw-r--  1 kalexiou kalexiou   1616 nov 16 13:15 file_proxy.py
+-rw-rw-r--  1 kalexiou kalexiou   2507 nov 16 13:15 filesize.py
+-rw-rw-r--  1 kalexiou kalexiou   9585 nov 16 13:15 highlighter.py
+-rw-rw-r--  1 kalexiou kalexiou   5944 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou   9695 nov 16 13:15 _inspect.py
+-rw-rw-r--  1 kalexiou kalexiou   5051 nov 16 13:15 json.py
+-rw-rw-r--  1 kalexiou kalexiou   3252 nov 16 13:15 jupyter.py
+-rw-rw-r--  1 kalexiou kalexiou  14074 nov 16 13:15 layout.py
+-rw-rw-r--  1 kalexiou kalexiou  14172 nov 16 13:15 live.py
+-rw-rw-r--  1 kalexiou kalexiou   3667 nov 16 13:15 live_render.py
+-rw-rw-r--  1 kalexiou kalexiou  11471 nov 16 13:15 logging.py
+-rw-rw-r--  1 kalexiou kalexiou   3225 nov 16 13:15 _log_render.py
+-rw-rw-r--  1 kalexiou kalexiou   1236 nov 16 13:15 _loop.py
+-rw-rw-r--  1 kalexiou kalexiou   8808 nov 16 13:15 __main__.py
+-rw-rw-r--  1 kalexiou kalexiou   8198 nov 16 13:15 markup.py
+-rw-rw-r--  1 kalexiou kalexiou   5305 nov 16 13:15 measure.py
+-rw-rw-r--  1 kalexiou kalexiou   4970 nov 16 13:15 padding.py
+-rw-rw-r--  1 kalexiou kalexiou    828 nov 16 13:15 pager.py
+-rw-rw-r--  1 kalexiou kalexiou   3396 nov 16 13:15 palette.py
+-rw-rw-r--  1 kalexiou kalexiou   7063 nov 16 13:15 _palettes.py
+-rw-rw-r--  1 kalexiou kalexiou   8744 nov 16 13:15 panel.py
+-rw-rw-r--  1 kalexiou kalexiou    423 nov 16 13:15 _pick.py
+-rw-rw-r--  1 kalexiou kalexiou  36576 nov 16 13:15 pretty.py
+-rw-rw-r--  1 kalexiou kalexiou   8161 nov 16 13:15 progress_bar.py
+-rw-rw-r--  1 kalexiou kalexiou  59746 nov 16 13:15 progress.py
+-rw-rw-r--  1 kalexiou kalexiou  11303 nov 16 13:15 prompt.py
+-rw-rw-r--  1 kalexiou kalexiou   1391 nov 16 13:15 protocol.py
+-rw-rw-r--  1 kalexiou kalexiou   5472 nov 16 13:15 _ratio.py
+-rw-rw-r--  1 kalexiou kalexiou    166 nov 16 13:15 region.py
+-rw-rw-r--  1 kalexiou kalexiou   4449 nov 16 13:15 repr.py
+-rw-rw-r--  1 kalexiou kalexiou   4773 nov 16 13:15 rule.py
+-rw-rw-r--  1 kalexiou kalexiou   2842 nov 16 13:15 scope.py
+-rw-rw-r--  1 kalexiou kalexiou   1591 nov 16 13:15 screen.py
+-rw-rw-r--  1 kalexiou kalexiou  24224 nov 16 13:15 segment.py
+-rw-rw-r--  1 kalexiou kalexiou   4374 nov 16 13:15 spinner.py
+-rw-rw-r--  1 kalexiou kalexiou  19919 nov 16 13:15 _spinners.py
+-rw-rw-r--  1 kalexiou kalexiou    351 nov 16 13:15 _stack.py
+-rw-rw-r--  1 kalexiou kalexiou   4425 nov 16 13:15 status.py
+-rw-rw-r--  1 kalexiou kalexiou   1258 nov 16 13:15 styled.py
+-rw-rw-r--  1 kalexiou kalexiou  26240 nov 16 13:15 style.py
+-rw-rw-r--  1 kalexiou kalexiou  34697 nov 16 13:15 syntax.py
+-rw-rw-r--  1 kalexiou kalexiou  39515 nov 16 13:15 table.py
+-rw-rw-r--  1 kalexiou kalexiou   3370 nov 16 13:15 terminal_theme.py
+-rw-rw-r--  1 kalexiou kalexiou  44666 nov 16 13:15 text.py
+-rw-rw-r--  1 kalexiou kalexiou   3627 nov 16 13:15 theme.py
+-rw-rw-r--  1 kalexiou kalexiou    102 nov 16 13:15 themes.py
+-rw-rw-r--  1 kalexiou kalexiou    417 nov 16 13:15 _timer.py
+-rw-rw-r--  1 kalexiou kalexiou  26060 nov 16 13:15 traceback.py
+-rw-rw-r--  1 kalexiou kalexiou   9169 nov 16 13:15 tree.py
+-rw-rw-r--  1 kalexiou kalexiou  22820 nov 16 13:15 _win32_console.py
+-rw-rw-r--  1 kalexiou kalexiou   1926 nov 16 13:15 _windows.py
+-rw-rw-r--  1 kalexiou kalexiou   2783 nov 16 13:15 _windows_renderer.py
+-rw-rw-r--  1 kalexiou kalexiou   1840 nov 16 13:15 _wrap.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/tenacity:
+total 76
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  1496 nov 16 13:15 after.py
+-rw-rw-r--  1 kalexiou kalexiou  3314 nov 16 13:15 _asyncio.py
+-rw-rw-r--  1 kalexiou kalexiou  1376 nov 16 13:15 before.py
+-rw-rw-r--  1 kalexiou kalexiou  1908 nov 16 13:15 before_sleep.py
+-rw-rw-r--  1 kalexiou kalexiou 18364 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  1383 nov 16 13:15 nap.py
+-rw-rw-r--  1 kalexiou kalexiou  7550 nov 16 13:15 retry.py
+-rw-rw-r--  1 kalexiou kalexiou  2790 nov 16 13:15 stop.py
+-rw-rw-r--  1 kalexiou kalexiou  2145 nov 16 13:15 tornadoweb.py
+-rw-rw-r--  1 kalexiou kalexiou  1944 nov 16 13:15 _utils.py
+-rw-rw-r--  1 kalexiou kalexiou  8011 nov 16 13:15 wait.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/tomli:
+total 44
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou   396 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou 22633 nov 16 13:15 _parser.py
+-rw-rw-r--  1 kalexiou kalexiou  2943 nov 16 13:15 _re.py
+-rw-rw-r--  1 kalexiou kalexiou   254 nov 16 13:15 _types.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/urllib3:
+total 188
+drwxrwxr-x  5 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 10811 nov 16 13:15 _collections.py
+-rw-rw-r--  1 kalexiou kalexiou 39093 nov 16 13:15 connectionpool.py
+-rw-rw-r--  1 kalexiou kalexiou 20070 nov 16 13:15 connection.py
+drwxrwxr-x  3 kalexiou kalexiou  4096 nov 16 13:15 contrib/
+-rw-rw-r--  1 kalexiou kalexiou  8217 nov 16 13:15 exceptions.py
+-rw-rw-r--  1 kalexiou kalexiou  8579 nov 16 13:15 fields.py
+-rw-rw-r--  1 kalexiou kalexiou  2440 nov 16 13:15 filepost.py
+-rw-rw-r--  1 kalexiou kalexiou  3333 nov 16 13:15 __init__.py
+drwxrwxr-x  3 kalexiou kalexiou  4096 nov 16 13:15 packages/
+-rw-rw-r--  1 kalexiou kalexiou 19786 nov 16 13:15 poolmanager.py
+-rw-rw-r--  1 kalexiou kalexiou  5985 nov 16 13:15 request.py
+-rw-rw-r--  1 kalexiou kalexiou 30109 nov 16 13:15 response.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 util/
+-rw-rw-r--  1 kalexiou kalexiou    64 nov 16 13:15 _version.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/urllib3/contrib:
+total 100
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 5 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou   957 nov 16 13:15 _appengine_environ.py
+-rw-rw-r-- 1 kalexiou kalexiou 11034 nov 16 13:15 appengine.py
+-rw-rw-r-- 1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou  4538 nov 16 13:15 ntlmpool.py
+-rw-rw-r-- 1 kalexiou kalexiou 17182 nov 16 13:15 pyopenssl.py
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 _securetransport/
+-rw-rw-r-- 1 kalexiou kalexiou 34448 nov 16 13:15 securetransport.py
+-rw-rw-r-- 1 kalexiou kalexiou  7097 nov 16 13:15 socks.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/urllib3/contrib/_securetransport:
+total 44
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 17632 nov 16 13:15 bindings.py
+-rw-rw-r-- 1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 13922 nov 16 13:15 low_level.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/urllib3/packages:
+total 48
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 5 kalexiou kalexiou  4096 nov 16 13:15 ../
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 backports/
+-rw-rw-r-- 1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 34665 nov 16 13:15 six.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/urllib3/packages/backports:
+total 12
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou    0 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 1417 nov 16 13:15 makefile.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/urllib3/util:
+total 132
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 5 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  4901 nov 16 13:15 connection.py
+-rw-rw-r-- 1 kalexiou kalexiou  1155 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou  1605 nov 16 13:15 proxy.py
+-rw-rw-r-- 1 kalexiou kalexiou   498 nov 16 13:15 queue.py
+-rw-rw-r-- 1 kalexiou kalexiou  3997 nov 16 13:15 request.py
+-rw-rw-r-- 1 kalexiou kalexiou  3510 nov 16 13:15 response.py
+-rw-rw-r-- 1 kalexiou kalexiou 22001 nov 16 13:15 retry.py
+-rw-rw-r-- 1 kalexiou kalexiou  5758 nov 16 13:15 ssl_match_hostname.py
+-rw-rw-r-- 1 kalexiou kalexiou 17177 nov 16 13:15 ssl_.py
+-rw-rw-r-- 1 kalexiou kalexiou  6895 nov 16 13:15 ssltransport.py
+-rw-rw-r-- 1 kalexiou kalexiou 10003 nov 16 13:15 timeout.py
+-rw-rw-r-- 1 kalexiou kalexiou 14287 nov 16 13:15 url.py
+-rw-rw-r-- 1 kalexiou kalexiou  5403 nov 16 13:15 wait.py
+
+venv/lib/python3.10/site-packages/pip/_vendor/webencodings:
+total 52
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 23 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 10579 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou  8979 nov 16 13:15 labels.py
+-rw-rw-r--  1 kalexiou kalexiou  1305 nov 16 13:15 mklabels.py
+-rw-rw-r--  1 kalexiou kalexiou  6563 nov 16 13:15 tests.py
+-rw-rw-r--  1 kalexiou kalexiou  4307 nov 16 13:15 x_user_defined.py
+
+venv/lib/python3.10/site-packages/pip-22.3.1.dist-info:
+total 104
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 11 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou   125 nov 16 13:15 entry_points.txt
+-rw-rw-r--  1 kalexiou kalexiou     4 nov 16 13:15 INSTALLER
+-rw-rw-r--  1 kalexiou kalexiou  1093 nov 16 13:15 LICENSE.txt
+-rw-rw-r--  1 kalexiou kalexiou  4072 nov 16 13:15 METADATA
+-rw-rw-r--  1 kalexiou kalexiou 71259 nov 16 13:15 RECORD
+-rw-rw-r--  1 kalexiou kalexiou     4 nov 16 13:15 top_level.txt
+-rw-rw-r--  1 kalexiou kalexiou    92 nov 16 13:15 WHEEL
+
+venv/lib/python3.10/site-packages/pkg_resources:
+total 128
+drwxrwxr-x  5 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 11 kalexiou kalexiou   4096 nov 16 13:15 ../
+drwxrwxr-x  3 kalexiou kalexiou   4096 nov 16 13:15 extern/
+-rw-rw-r--  1 kalexiou kalexiou 108568 nov 16 13:15 __init__.py
+drwxrwxr-x  2 kalexiou kalexiou   4096 nov 16 13:15 __pycache__/
+drwxrwxr-x  8 kalexiou kalexiou   4096 nov 16 13:15 _vendor/
+
+venv/lib/python3.10/site-packages/pkg_resources/extern:
+total 16
+drwxrwxr-x 3 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 5 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 2426 nov 16 13:15 __init__.py
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 __pycache__/
+
+venv/lib/python3.10/site-packages/pkg_resources/extern/__pycache__:
+total 12
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 2963 nov 16 13:15 __init__.cpython-310.pyc
+
+venv/lib/python3.10/site-packages/pkg_resources/__pycache__:
+total 108
+drwxrwxr-x 2 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 5 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 100578 nov 16 13:15 __init__.cpython-310.pyc
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor:
+total 72
+drwxrwxr-x 8 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 5 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 24701 nov 16 13:15 appdirs.py
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 importlib_resources/
+-rw-rw-r-- 1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+drwxrwxr-x 4 kalexiou kalexiou  4096 nov 16 13:15 jaraco/
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 more_itertools/
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 packaging/
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 __pycache__/
+drwxrwxr-x 4 kalexiou kalexiou  4096 nov 16 13:15 pyparsing/
+-rw-rw-r-- 1 kalexiou kalexiou  8425 nov 16 13:15 zipp.py
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/importlib_resources:
+total 48
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 8 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 3886 nov 16 13:15 abc.py
+-rw-rw-r-- 1 kalexiou kalexiou 4504 nov 16 13:15 _adapters.py
+-rw-rw-r-- 1 kalexiou kalexiou 2741 nov 16 13:15 _common.py
+-rw-rw-r-- 1 kalexiou kalexiou 2706 nov 16 13:15 _compat.py
+-rw-rw-r-- 1 kalexiou kalexiou  506 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou  884 nov 16 13:15 _itertools.py
+-rw-rw-r-- 1 kalexiou kalexiou 3494 nov 16 13:15 _legacy.py
+-rw-rw-r-- 1 kalexiou kalexiou 3566 nov 16 13:15 readers.py
+-rw-rw-r-- 1 kalexiou kalexiou 2836 nov 16 13:15 simple.py
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/jaraco:
+total 40
+drwxrwxr-x 4 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 8 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  5420 nov 16 13:15 context.py
+-rw-rw-r-- 1 kalexiou kalexiou 13515 nov 16 13:15 functools.py
+-rw-rw-r-- 1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 __pycache__/
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 text/
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/jaraco/__pycache__:
+total 36
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  6349 nov 16 13:15 context.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou 15641 nov 16 13:15 functools.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou   217 nov 16 13:15 __init__.cpython-310.pyc
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/jaraco/text:
+total 28
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 15526 nov 16 13:15 __init__.py
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 __pycache__/
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/jaraco/text/__pycache__:
+total 28
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 19686 nov 16 13:15 __init__.cpython-310.pyc
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/more_itertools:
+total 168
+drwxrwxr-x 3 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 8 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou     83 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 132569 nov 16 13:15 more.py
+drwxrwxr-x 2 kalexiou kalexiou   4096 nov 16 13:15 __pycache__/
+-rw-rw-r-- 1 kalexiou kalexiou  18410 nov 16 13:15 recipes.py
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/more_itertools/__pycache__:
+total 156
+drwxrwxr-x 2 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou    292 nov 16 13:15 __init__.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou 123065 nov 16 13:15 more.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou  20353 nov 16 13:15 recipes.cpython-310.pyc
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/packaging:
+total 136
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 8 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou   661 nov 16 13:15 __about__.py
+-rw-rw-r-- 1 kalexiou kalexiou   497 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 11488 nov 16 13:15 _manylinux.py
+-rw-rw-r-- 1 kalexiou kalexiou  8496 nov 16 13:15 markers.py
+-rw-rw-r-- 1 kalexiou kalexiou  4378 nov 16 13:15 _musllinux.py
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 __pycache__/
+-rw-rw-r-- 1 kalexiou kalexiou  4706 nov 16 13:15 requirements.py
+-rw-rw-r-- 1 kalexiou kalexiou 30110 nov 16 13:15 specifiers.py
+-rw-rw-r-- 1 kalexiou kalexiou  1431 nov 16 13:15 _structures.py
+-rw-rw-r-- 1 kalexiou kalexiou 15699 nov 16 13:15 tags.py
+-rw-rw-r-- 1 kalexiou kalexiou  4200 nov 16 13:15 utils.py
+-rw-rw-r-- 1 kalexiou kalexiou 14665 nov 16 13:15 version.py
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/packaging/__pycache__:
+total 108
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou   617 nov 16 13:15 __about__.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou   473 nov 16 13:15 __init__.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou  7327 nov 16 13:15 _manylinux.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou  9323 nov 16 13:15 markers.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou  4639 nov 16 13:15 _musllinux.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou  4011 nov 16 13:15 requirements.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou 21554 nov 16 13:15 specifiers.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou  2732 nov 16 13:15 _structures.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou 12217 nov 16 13:15 tags.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou  3602 nov 16 13:15 utils.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou 12952 nov 16 13:15 version.cpython-310.pyc
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/__pycache__:
+total 32
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 8 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 20271 nov 16 13:15 appdirs.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou   210 nov 16 13:15 __init__.cpython-310.pyc
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/pyparsing:
+total 380
+drwxrwxr-x 4 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 8 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou   6426 nov 16 13:15 actions.py
+-rw-rw-r-- 1 kalexiou kalexiou  12936 nov 16 13:15 common.py
+-rw-rw-r-- 1 kalexiou kalexiou 213310 nov 16 13:15 core.py
+drwxrwxr-x 2 kalexiou kalexiou   4096 nov 16 13:15 diagram/
+-rw-rw-r-- 1 kalexiou kalexiou   9023 nov 16 13:15 exceptions.py
+-rw-rw-r-- 1 kalexiou kalexiou  39129 nov 16 13:15 helpers.py
+-rw-rw-r-- 1 kalexiou kalexiou   9159 nov 16 13:15 __init__.py
+drwxrwxr-x 2 kalexiou kalexiou   4096 nov 16 13:15 __pycache__/
+-rw-rw-r-- 1 kalexiou kalexiou  25341 nov 16 13:15 results.py
+-rw-rw-r-- 1 kalexiou kalexiou  13402 nov 16 13:15 testing.py
+-rw-rw-r-- 1 kalexiou kalexiou  10787 nov 16 13:15 unicode.py
+-rw-rw-r-- 1 kalexiou kalexiou   6805 nov 16 13:15 util.py
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/pyparsing/diagram:
+total 32
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 23668 nov 16 13:15 __init__.py
+
+venv/lib/python3.10/site-packages/pkg_resources/_vendor/pyparsing/__pycache__:
+total 324
+drwxrwxr-x 2 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou   7206 nov 16 13:15 actions.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou  10132 nov 16 13:15 common.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou 176449 nov 16 13:15 core.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou   9090 nov 16 13:15 exceptions.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou  35367 nov 16 13:15 helpers.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou   7144 nov 16 13:15 __init__.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou  24808 nov 16 13:15 results.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou  12124 nov 16 13:15 testing.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou  10085 nov 16 13:15 unicode.cpython-310.pyc
+-rw-rw-r-- 1 kalexiou kalexiou   8632 nov 16 13:15 util.cpython-310.pyc
+
+venv/lib/python3.10/site-packages/__pycache__:
+total 12
+drwxrwxr-x  2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 11 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 4068 nov 16 13:15 _virtualenv.cpython-310.pyc
+
+venv/lib/python3.10/site-packages/setuptools:
+total 1044
+drwxrwxr-x  7 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 11 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou   7346 nov 16 13:15 archive_util.py
+-rw-rw-r--  1 kalexiou kalexiou  19539 nov 16 13:15 build_meta.py
+-rw-rw-r--  1 kalexiou kalexiou  65536 nov 16 13:15 cli-32.exe
+-rw-rw-r--  1 kalexiou kalexiou  74752 nov 16 13:15 cli-64.exe
+-rw-rw-r--  1 kalexiou kalexiou 137216 nov 16 13:15 cli-arm64.exe
+-rw-rw-r--  1 kalexiou kalexiou  65536 nov 16 13:15 cli.exe
+drwxrwxr-x  2 kalexiou kalexiou   4096 nov 16 13:15 command/
+drwxrwxr-x  3 kalexiou kalexiou   4096 nov 16 13:15 config/
+-rw-rw-r--  1 kalexiou kalexiou   5499 nov 16 13:15 depends.py
+-rw-rw-r--  1 kalexiou kalexiou    218 nov 16 13:15 _deprecation_warning.py
+-rw-rw-r--  1 kalexiou kalexiou    949 nov 16 13:15 dep_util.py
+-rw-rw-r--  1 kalexiou kalexiou  20799 nov 16 13:15 discovery.py
+-rw-rw-r--  1 kalexiou kalexiou  45578 nov 16 13:15 dist.py
+drwxrwxr-x  3 kalexiou kalexiou   4096 nov 16 13:15 _distutils/
+-rw-rw-r--  1 kalexiou kalexiou   1972 nov 16 13:15 _entry_points.py
+-rw-rw-r--  1 kalexiou kalexiou   2464 nov 16 13:15 errors.py
+-rw-rw-r--  1 kalexiou kalexiou   5591 nov 16 13:15 extension.py
+drwxrwxr-x  2 kalexiou kalexiou   4096 nov 16 13:15 extern/
+-rw-rw-r--  1 kalexiou kalexiou   4873 nov 16 13:15 glob.py
+-rw-rw-r--  1 kalexiou kalexiou  65536 nov 16 13:15 gui-32.exe
+-rw-rw-r--  1 kalexiou kalexiou  75264 nov 16 13:15 gui-64.exe
+-rw-rw-r--  1 kalexiou kalexiou 137728 nov 16 13:15 gui-arm64.exe
+-rw-rw-r--  1 kalexiou kalexiou  65536 nov 16 13:15 gui.exe
+-rw-rw-r--  1 kalexiou kalexiou   1311 nov 16 13:15 _importlib.py
+-rw-rw-r--  1 kalexiou kalexiou   2392 nov 16 13:15 _imp.py
+-rw-rw-r--  1 kalexiou kalexiou   8429 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou   3824 nov 16 13:15 installer.py
+-rw-rw-r--  1 kalexiou kalexiou    675 nov 16 13:15 _itertools.py
+-rw-rw-r--  1 kalexiou kalexiou    812 nov 16 13:15 launch.py
+-rw-rw-r--  1 kalexiou kalexiou   1210 nov 16 13:15 logging.py
+-rw-rw-r--  1 kalexiou kalexiou   4857 nov 16 13:15 monkey.py
+-rw-rw-r--  1 kalexiou kalexiou  47724 nov 16 13:15 msvc.py
+-rw-rw-r--  1 kalexiou kalexiou   3093 nov 16 13:15 namespaces.py
+-rw-rw-r--  1 kalexiou kalexiou  40329 nov 16 13:15 package_index.py
+-rw-rw-r--  1 kalexiou kalexiou    749 nov 16 13:15 _path.py
+-rw-rw-r--  1 kalexiou kalexiou    245 nov 16 13:15 py34compat.py
+-rw-rw-r--  1 kalexiou kalexiou    501 nov 16 13:15 _reqs.py
+-rw-rw-r--  1 kalexiou kalexiou  14348 nov 16 13:15 sandbox.py
+-rw-rw-r--  1 kalexiou kalexiou    218 nov 16 13:15 script (dev).tmpl
+-rw-rw-r--  1 kalexiou kalexiou    138 nov 16 13:15 script.tmpl
+-rw-rw-r--  1 kalexiou kalexiou    941 nov 16 13:15 unicode_utils.py
+drwxrwxr-x  9 kalexiou kalexiou   4096 nov 16 13:15 _vendor/
+-rw-rw-r--  1 kalexiou kalexiou    144 nov 16 13:15 version.py
+-rw-rw-r--  1 kalexiou kalexiou   8376 nov 16 13:15 wheel.py
+-rw-rw-r--  1 kalexiou kalexiou    718 nov 16 13:15 windows_support.py
+
+venv/lib/python3.10/site-packages/setuptools/command:
+total 328
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 7 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  2381 nov 16 13:15 alias.py
+-rw-rw-r-- 1 kalexiou kalexiou 16623 nov 16 13:15 bdist_egg.py
+-rw-rw-r-- 1 kalexiou kalexiou  1182 nov 16 13:15 bdist_rpm.py
+-rw-rw-r-- 1 kalexiou kalexiou  4415 nov 16 13:15 build_clib.py
+-rw-rw-r-- 1 kalexiou kalexiou 15821 nov 16 13:15 build_ext.py
+-rw-rw-r-- 1 kalexiou kalexiou  6589 nov 16 13:15 build.py
+-rw-rw-r-- 1 kalexiou kalexiou 14115 nov 16 13:15 build_py.py
+-rw-rw-r-- 1 kalexiou kalexiou  7012 nov 16 13:15 develop.py
+-rw-rw-r-- 1 kalexiou kalexiou  4800 nov 16 13:15 dist_info.py
+-rw-rw-r-- 1 kalexiou kalexiou 85662 nov 16 13:15 easy_install.py
+-rw-rw-r-- 1 kalexiou kalexiou 31188 nov 16 13:15 editable_wheel.py
+-rw-rw-r-- 1 kalexiou kalexiou 26795 nov 16 13:15 egg_info.py
+-rw-rw-r-- 1 kalexiou kalexiou   396 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou  2226 nov 16 13:15 install_egg_info.py
+-rw-rw-r-- 1 kalexiou kalexiou  3875 nov 16 13:15 install_lib.py
+-rw-rw-r-- 1 kalexiou kalexiou  5163 nov 16 13:15 install.py
+-rw-rw-r-- 1 kalexiou kalexiou  2612 nov 16 13:15 install_scripts.py
+-rw-rw-r-- 1 kalexiou kalexiou   628 nov 16 13:15 launcher manifest.xml
+-rw-rw-r-- 1 kalexiou kalexiou  4946 nov 16 13:15 py36compat.py
+-rw-rw-r-- 1 kalexiou kalexiou   468 nov 16 13:15 register.py
+-rw-rw-r-- 1 kalexiou kalexiou  2128 nov 16 13:15 rotate.py
+-rw-rw-r-- 1 kalexiou kalexiou   658 nov 16 13:15 saveopts.py
+-rw-rw-r-- 1 kalexiou kalexiou  7071 nov 16 13:15 sdist.py
+-rw-rw-r-- 1 kalexiou kalexiou  5086 nov 16 13:15 setopt.py
+-rw-rw-r-- 1 kalexiou kalexiou  8102 nov 16 13:15 test.py
+-rw-rw-r-- 1 kalexiou kalexiou  7494 nov 16 13:15 upload_docs.py
+-rw-rw-r-- 1 kalexiou kalexiou   462 nov 16 13:15 upload.py
+
+venv/lib/python3.10/site-packages/setuptools/config:
+total 96
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 7 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 13398 nov 16 13:15 _apply_pyprojecttoml.py
+-rw-rw-r-- 1 kalexiou kalexiou 16319 nov 16 13:15 expand.py
+-rw-rw-r-- 1 kalexiou kalexiou  1121 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 19304 nov 16 13:15 pyprojecttoml.py
+-rw-rw-r-- 1 kalexiou kalexiou 25198 nov 16 13:15 setupcfg.py
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 _validate_pyproject/
+
+venv/lib/python3.10/site-packages/setuptools/config/_validate_pyproject:
+total 308
+drwxrwxr-x 2 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  11266 nov 16 13:15 error_reporting.py
+-rw-rw-r-- 1 kalexiou kalexiou   1153 nov 16 13:15 extra_validations.py
+-rw-rw-r-- 1 kalexiou kalexiou   1612 nov 16 13:15 fastjsonschema_exceptions.py
+-rw-rw-r-- 1 kalexiou kalexiou 269900 nov 16 13:15 fastjsonschema_validations.py
+-rw-rw-r-- 1 kalexiou kalexiou   8736 nov 16 13:15 formats.py
+-rw-rw-r-- 1 kalexiou kalexiou   1038 nov 16 13:15 __init__.py
+
+venv/lib/python3.10/site-packages/setuptools/_distutils:
+total 476
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 7 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  8603 nov 16 13:15 archive_util.py
+-rw-rw-r-- 1 kalexiou kalexiou 14789 nov 16 13:15 bcppcompiler.py
+-rw-rw-r-- 1 kalexiou kalexiou 47369 nov 16 13:15 ccompiler.py
+-rw-rw-r-- 1 kalexiou kalexiou 17973 nov 16 13:15 cmd.py
+-rw-rw-r-- 1 kalexiou kalexiou  1330 nov 16 13:15 _collections.py
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 command/
+-rw-rw-r-- 1 kalexiou kalexiou  4920 nov 16 13:15 config.py
+-rw-rw-r-- 1 kalexiou kalexiou  9451 nov 16 13:15 core.py
+-rw-rw-r-- 1 kalexiou kalexiou 12537 nov 16 13:15 cygwinccompiler.py
+-rw-rw-r-- 1 kalexiou kalexiou   139 nov 16 13:15 debug.py
+-rw-rw-r-- 1 kalexiou kalexiou  3423 nov 16 13:15 dep_util.py
+-rw-rw-r-- 1 kalexiou kalexiou  8082 nov 16 13:15 dir_util.py
+-rw-rw-r-- 1 kalexiou kalexiou 50186 nov 16 13:15 dist.py
+-rw-rw-r-- 1 kalexiou kalexiou  3589 nov 16 13:15 errors.py
+-rw-rw-r-- 1 kalexiou kalexiou 10270 nov 16 13:15 extension.py
+-rw-rw-r-- 1 kalexiou kalexiou 17910 nov 16 13:15 fancy_getopt.py
+-rw-rw-r-- 1 kalexiou kalexiou 13713 nov 16 13:15 filelist.py
+-rw-rw-r-- 1 kalexiou kalexiou  8226 nov 16 13:15 file_util.py
+-rw-rw-r-- 1 kalexiou kalexiou   411 nov 16 13:15 _functools.py
+-rw-rw-r-- 1 kalexiou kalexiou   537 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou  1972 nov 16 13:15 log.py
+-rw-rw-r-- 1 kalexiou kalexiou   239 nov 16 13:15 _macos_compat.py
+-rw-rw-r-- 1 kalexiou kalexiou 30235 nov 16 13:15 msvc9compiler.py
+-rw-rw-r-- 1 kalexiou kalexiou 19672 nov 16 13:15 _msvccompiler.py
+-rw-rw-r-- 1 kalexiou kalexiou 23602 nov 16 13:15 msvccompiler.py
+-rw-rw-r-- 1 kalexiou kalexiou   217 nov 16 13:15 py38compat.py
+-rw-rw-r-- 1 kalexiou kalexiou   639 nov 16 13:15 py39compat.py
+-rw-rw-r-- 1 kalexiou kalexiou  3517 nov 16 13:15 spawn.py
+-rw-rw-r-- 1 kalexiou kalexiou 18858 nov 16 13:15 sysconfig.py
+-rw-rw-r-- 1 kalexiou kalexiou 12096 nov 16 13:15 text_file.py
+-rw-rw-r-- 1 kalexiou kalexiou 15641 nov 16 13:15 unixccompiler.py
+-rw-rw-r-- 1 kalexiou kalexiou 18128 nov 16 13:15 util.py
+-rw-rw-r-- 1 kalexiou kalexiou  5248 nov 16 13:15 versionpredicate.py
+-rw-rw-r-- 1 kalexiou kalexiou 12952 nov 16 13:15 version.py
+
+venv/lib/python3.10/site-packages/setuptools/_distutils/command:
+total 264
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  4701 nov 16 13:15 bdist_dumb.py
+-rw-rw-r-- 1 kalexiou kalexiou  5441 nov 16 13:15 bdist.py
+-rw-rw-r-- 1 kalexiou kalexiou 22051 nov 16 13:15 bdist_rpm.py
+-rw-rw-r-- 1 kalexiou kalexiou  7728 nov 16 13:15 build_clib.py
+-rw-rw-r-- 1 kalexiou kalexiou 31558 nov 16 13:15 build_ext.py
+-rw-rw-r-- 1 kalexiou kalexiou  5617 nov 16 13:15 build.py
+-rw-rw-r-- 1 kalexiou kalexiou 16568 nov 16 13:15 build_py.py
+-rw-rw-r-- 1 kalexiou kalexiou  5624 nov 16 13:15 build_scripts.py
+-rw-rw-r-- 1 kalexiou kalexiou  4888 nov 16 13:15 check.py
+-rw-rw-r-- 1 kalexiou kalexiou  2603 nov 16 13:15 clean.py
+-rw-rw-r-- 1 kalexiou kalexiou 13137 nov 16 13:15 config.py
+-rw-rw-r-- 1 kalexiou kalexiou  1614 nov 16 13:15 _framework_compat.py
+-rw-rw-r-- 1 kalexiou kalexiou   430 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou  2779 nov 16 13:15 install_data.py
+-rw-rw-r-- 1 kalexiou kalexiou  2785 nov 16 13:15 install_egg_info.py
+-rw-rw-r-- 1 kalexiou kalexiou  1189 nov 16 13:15 install_headers.py
+-rw-rw-r-- 1 kalexiou kalexiou  8434 nov 16 13:15 install_lib.py
+-rw-rw-r-- 1 kalexiou kalexiou 30221 nov 16 13:15 install.py
+-rw-rw-r-- 1 kalexiou kalexiou  1936 nov 16 13:15 install_scripts.py
+-rw-rw-r-- 1 kalexiou kalexiou   672 nov 16 13:15 py37compat.py
+-rw-rw-r-- 1 kalexiou kalexiou 11765 nov 16 13:15 register.py
+-rw-rw-r-- 1 kalexiou kalexiou 19241 nov 16 13:15 sdist.py
+-rw-rw-r-- 1 kalexiou kalexiou  7477 nov 16 13:15 upload.py
+
+venv/lib/python3.10/site-packages/setuptools/extern:
+total 12
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 7 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 2512 nov 16 13:15 __init__.py
+
+venv/lib/python3.10/site-packages/setuptools/_vendor:
+total 152
+drwxrwxr-x 9 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 7 kalexiou kalexiou  4096 nov 16 13:15 ../
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 importlib_metadata/
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 importlib_resources/
+-rw-rw-r-- 1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 jaraco/
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 more_itertools/
+-rw-rw-r-- 1 kalexiou kalexiou 15130 nov 16 13:15 ordered_set.py
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 packaging/
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 pyparsing/
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 tomli/
+-rw-rw-r-- 1 kalexiou kalexiou 87149 nov 16 13:15 typing_extensions.py
+-rw-rw-r-- 1 kalexiou kalexiou  8425 nov 16 13:15 zipp.py
+
+venv/lib/python3.10/site-packages/setuptools/_vendor/importlib_metadata:
+total 68
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 9 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  1862 nov 16 13:15 _adapters.py
+-rw-rw-r-- 1 kalexiou kalexiou   743 nov 16 13:15 _collections.py
+-rw-rw-r-- 1 kalexiou kalexiou  1828 nov 16 13:15 _compat.py
+-rw-rw-r-- 1 kalexiou kalexiou  2895 nov 16 13:15 _functools.py
+-rw-rw-r-- 1 kalexiou kalexiou 30130 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou  2068 nov 16 13:15 _itertools.py
+-rw-rw-r-- 1 kalexiou kalexiou  1154 nov 16 13:15 _meta.py
+-rw-rw-r-- 1 kalexiou kalexiou  2166 nov 16 13:15 _text.py
+
+venv/lib/python3.10/site-packages/setuptools/_vendor/importlib_resources:
+total 48
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 9 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 3886 nov 16 13:15 abc.py
+-rw-rw-r-- 1 kalexiou kalexiou 4504 nov 16 13:15 _adapters.py
+-rw-rw-r-- 1 kalexiou kalexiou 2741 nov 16 13:15 _common.py
+-rw-rw-r-- 1 kalexiou kalexiou 2706 nov 16 13:15 _compat.py
+-rw-rw-r-- 1 kalexiou kalexiou  506 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou  884 nov 16 13:15 _itertools.py
+-rw-rw-r-- 1 kalexiou kalexiou 3494 nov 16 13:15 _legacy.py
+-rw-rw-r-- 1 kalexiou kalexiou 3566 nov 16 13:15 readers.py
+-rw-rw-r-- 1 kalexiou kalexiou 2836 nov 16 13:15 simple.py
+
+venv/lib/python3.10/site-packages/setuptools/_vendor/jaraco:
+total 36
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 9 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou  5420 nov 16 13:15 context.py
+-rw-rw-r-- 1 kalexiou kalexiou 13512 nov 16 13:15 functools.py
+-rw-rw-r-- 1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 text/
+
+venv/lib/python3.10/site-packages/setuptools/_vendor/jaraco/text:
+total 24
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 15517 nov 16 13:15 __init__.py
+
+venv/lib/python3.10/site-packages/setuptools/_vendor/more_itertools:
+total 144
+drwxrwxr-x 2 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 9 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou     82 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 117959 nov 16 13:15 more.py
+-rw-rw-r-- 1 kalexiou kalexiou  16256 nov 16 13:15 recipes.py
+
+venv/lib/python3.10/site-packages/setuptools/_vendor/packaging:
+total 132
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 9 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou   661 nov 16 13:15 __about__.py
+-rw-rw-r-- 1 kalexiou kalexiou   497 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 11488 nov 16 13:15 _manylinux.py
+-rw-rw-r-- 1 kalexiou kalexiou  8493 nov 16 13:15 markers.py
+-rw-rw-r-- 1 kalexiou kalexiou  4378 nov 16 13:15 _musllinux.py
+-rw-rw-r-- 1 kalexiou kalexiou  4700 nov 16 13:15 requirements.py
+-rw-rw-r-- 1 kalexiou kalexiou 30110 nov 16 13:15 specifiers.py
+-rw-rw-r-- 1 kalexiou kalexiou  1431 nov 16 13:15 _structures.py
+-rw-rw-r-- 1 kalexiou kalexiou 15699 nov 16 13:15 tags.py
+-rw-rw-r-- 1 kalexiou kalexiou  4200 nov 16 13:15 utils.py
+-rw-rw-r-- 1 kalexiou kalexiou 14665 nov 16 13:15 version.py
+
+venv/lib/python3.10/site-packages/setuptools/_vendor/pyparsing:
+total 376
+drwxrwxr-x 3 kalexiou kalexiou   4096 nov 16 13:15 ./
+drwxrwxr-x 9 kalexiou kalexiou   4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou   6426 nov 16 13:15 actions.py
+-rw-rw-r-- 1 kalexiou kalexiou  12936 nov 16 13:15 common.py
+-rw-rw-r-- 1 kalexiou kalexiou 213310 nov 16 13:15 core.py
+drwxrwxr-x 2 kalexiou kalexiou   4096 nov 16 13:15 diagram/
+-rw-rw-r-- 1 kalexiou kalexiou   9023 nov 16 13:15 exceptions.py
+-rw-rw-r-- 1 kalexiou kalexiou  39129 nov 16 13:15 helpers.py
+-rw-rw-r-- 1 kalexiou kalexiou   9159 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou  25341 nov 16 13:15 results.py
+-rw-rw-r-- 1 kalexiou kalexiou  13402 nov 16 13:15 testing.py
+-rw-rw-r-- 1 kalexiou kalexiou  10787 nov 16 13:15 unicode.py
+-rw-rw-r-- 1 kalexiou kalexiou   6805 nov 16 13:15 util.py
+
+venv/lib/python3.10/site-packages/setuptools/_vendor/pyparsing/diagram:
+total 32
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 23668 nov 16 13:15 __init__.py
+
+venv/lib/python3.10/site-packages/setuptools/_vendor/tomli:
+total 44
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 9 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou   396 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 22633 nov 16 13:15 _parser.py
+-rw-rw-r-- 1 kalexiou kalexiou  2943 nov 16 13:15 _re.py
+-rw-rw-r-- 1 kalexiou kalexiou   254 nov 16 13:15 _types.py
+
+venv/lib/python3.10/site-packages/setuptools-65.5.1.dist-info:
+total 72
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 11 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  2740 nov 16 13:15 entry_points.txt
+-rw-rw-r--  1 kalexiou kalexiou     4 nov 16 13:15 INSTALLER
+-rw-rw-r--  1 kalexiou kalexiou  1050 nov 16 13:15 LICENSE
+-rw-rw-r--  1 kalexiou kalexiou  6311 nov 16 13:15 METADATA
+-rw-rw-r--  1 kalexiou kalexiou 35656 nov 16 13:15 RECORD
+-rw-rw-r--  1 kalexiou kalexiou    41 nov 16 13:15 top_level.txt
+-rw-rw-r--  1 kalexiou kalexiou    92 nov 16 13:15 WHEEL
+
+venv/lib/python3.10/site-packages/wheel:
+total 80
+drwxrwxr-x  4 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 11 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou 19293 nov 16 13:15 bdist_wheel.py
+drwxrwxr-x  2 kalexiou kalexiou  4096 nov 16 13:15 cli/
+-rw-rw-r--  1 kalexiou kalexiou    59 nov 16 13:15 __init__.py
+-rw-rw-r--  1 kalexiou kalexiou 16145 nov 16 13:15 macosx_libfile.py
+-rw-rw-r--  1 kalexiou kalexiou   455 nov 16 13:15 __main__.py
+-rw-rw-r--  1 kalexiou kalexiou  3727 nov 16 13:15 metadata.py
+-rw-rw-r--  1 kalexiou kalexiou   746 nov 16 13:15 _setuptools_logging.py
+-rw-rw-r--  1 kalexiou kalexiou   621 nov 16 13:15 util.py
+drwxrwxr-x  3 kalexiou kalexiou  4096 nov 16 13:15 vendored/
+-rw-rw-r--  1 kalexiou kalexiou  7536 nov 16 13:15 wheelfile.py
+
+venv/lib/python3.10/site-packages/wheel/cli:
+total 32
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou 9427 nov 16 13:15 convert.py
+-rw-rw-r-- 1 kalexiou kalexiou 2384 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 3383 nov 16 13:15 pack.py
+-rw-rw-r-- 1 kalexiou kalexiou  659 nov 16 13:15 unpack.py
+
+venv/lib/python3.10/site-packages/wheel/vendored:
+total 12
+drwxrwxr-x 3 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 4 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou    0 nov 16 13:15 __init__.py
+drwxrwxr-x 2 kalexiou kalexiou 4096 nov 16 13:15 packaging/
+
+venv/lib/python3.10/site-packages/wheel/vendored/packaging:
+total 44
+drwxrwxr-x 2 kalexiou kalexiou  4096 nov 16 13:15 ./
+drwxrwxr-x 3 kalexiou kalexiou  4096 nov 16 13:15 ../
+-rw-rw-r-- 1 kalexiou kalexiou     0 nov 16 13:15 __init__.py
+-rw-rw-r-- 1 kalexiou kalexiou 11489 nov 16 13:15 _manylinux.py
+-rw-rw-r-- 1 kalexiou kalexiou  4374 nov 16 13:15 _musllinux.py
+-rw-rw-r-- 1 kalexiou kalexiou 15612 nov 16 13:15 tags.py
+
+venv/lib/python3.10/site-packages/wheel-0.38.4.dist-info:
+total 36
+drwxrwxr-x  2 kalexiou kalexiou 4096 nov 16 13:15 ./
+drwxrwxr-x 11 kalexiou kalexiou 4096 nov 16 13:15 ../
+-rw-rw-r--  1 kalexiou kalexiou  107 nov 16 13:15 entry_points.txt
+-rw-rw-r--  1 kalexiou kalexiou    4 nov 16 13:15 INSTALLER
+-rw-rw-r--  1 kalexiou kalexiou 1107 nov 16 13:15 LICENSE.txt
+-rw-rw-r--  1 kalexiou kalexiou 2110 nov 16 13:15 METADATA
+-rw-rw-r--  1 kalexiou kalexiou 2815 nov 16 13:15 RECORD
+-rw-rw-r--  1 kalexiou kalexiou    6 nov 16 13:15 top_level.txt
+-rw-rw-r--  1 kalexiou kalexiou   92 nov 16 13:15 WHEEL
