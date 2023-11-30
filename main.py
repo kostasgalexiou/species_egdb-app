@@ -139,7 +139,7 @@ def main():
 
                 if selected_database and fasta_input and perciden and evalue and wsize and lowcomplex:
                     st.write(Bio.Blast.Applications.__file__, '$$$$$$$$$$$$$$$')
-                    st.write(os.listdir('/home/adminuser/venv/lib')
+                    st.write(os.listdir('/home/adminuser/venv/lib'))
 
                     with st.spinner('Generating blast output...'):
                         fp = tempfile.NamedTemporaryFile('w+')
