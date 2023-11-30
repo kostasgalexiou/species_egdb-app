@@ -16,7 +16,7 @@ from collections import OrderedDict as od
 import Bio 
 import Bio.Blast
 import Bio.Blast.Applications
-print(Bio.Blast.Applications.__file__, '$$$$$$$$$$$$$$$')
+
 # Initialize connection.
 url: str = st.secrets['connections']['supabase']["SUPABASE_URL"]
 key: str = st.secrets['connections']['supabase']["SUPABASE_KEY"]
@@ -138,6 +138,8 @@ def main():
                 # databases = supabase.storage.from_('blastDBs').download('Cannabis_sativa/chr02_1to10mbp.fa.fai').decode().split('\n')
 
                 if selected_database and fasta_input and perciden and evalue and wsize and lowcomplex:
+                    st.write(Bio.Blast.Applications.__file__, '$$$$$$$$$$$$$$$')
+
                     with st.spinner('Generating blast output...'):
                         fp = tempfile.NamedTemporaryFile('w+')
                         fp.write(fasta_input)
