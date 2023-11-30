@@ -12,7 +12,6 @@ from supabase_conn import *
 import tempfile
 import os
 from Bio.Blast.Applications import NcbiblastnCommandline, NcbiblastpCommandline, NcbiblastformatterCommandline
-from st_aggrid import AgGrid, GridOptionsBuilder
 from collections import OrderedDict as od
 
 # Initialize connection.
