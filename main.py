@@ -13,7 +13,7 @@ import tempfile
 import os
 from Bio.Blast.Applications import NcbiblastnCommandline, NcbiblastpCommandline, NcbiblastformatterCommandline
 from collections import OrderedDict as od
-
+print(Bio.Blast.Applications.__file__, '$$$$$$$$$$$$$$$')
 # Initialize connection.
 url: str = st.secrets['connections']['supabase']["SUPABASE_URL"]
 key: str = st.secrets['connections']['supabase']["SUPABASE_KEY"]
