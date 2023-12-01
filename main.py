@@ -6,13 +6,11 @@
 import emoji
 import pandas as pd
 import streamlit as st
-from streamlit_extras.dataframe_explorer import dataframe_explorer
 import base64
 from supabase_conn import *
 import tempfile
-import os
-from Bio.Blast.Applications import NcbiblastnCommandline, NcbiblastpCommandline, NcbiblastformatterCommandline
 from collections import OrderedDict as od
+from blast import perform_blast
 
 # Initialize connection.
 url: str = st.secrets['connections']['supabase']["SUPABASE_URL"]
@@ -62,8 +60,6 @@ def main():
     #
     #             # geneinfo_species = view_species_data("gene_info", new_species)
     #             # genedf = pd.DataFrame(geneinfo_species, columns=['geneid', 'chrom', 'start', 'end', 'transcripts', 'function'])
-    #             #
-    #             #
     #             # st.dataframe(cdsdf ,hide_index=True)
     #             # st.dataframe(protdf, hide_index = True)
 
@@ -136,94 +132,8 @@ def main():
 
                 if selected_database and fasta_input and perciden and evalue and wsize and lowcomplex:
 
-                    with st.spinner('Generating blast output...'):
-                        fp = tempfile.NamedTemporaryFile('w+')
-                        fp.write(fasta_input)
-                        fp.read()
-                        # fp.close()
-
-                        with tempfile.TemporaryDirectory() as dirtemp:
-                            for i in supabase.storage.from_('blastDBs').list('Cannabis_sativa'):
-                                filename = i["name"]
-                                with open(os.path.join(dirtemp, filename), 'wb+') as f:
-                                    bucketfile = supabase.storage.from_('blastDBs').download(
-                                        'Cannabis_sativa/%s' % filename)
-                                    f.write(bucketfile)
-
-                            if 'chromo' in selected_database:
-                                fasta_dbname = [x for x in os.listdir(dirtemp.title().lower()) if x.endswith('.fa')][0]
-                            else:
-                                fasta_dbname = [x for x in os.listdir(dirtemp.title().lower()) if x.endswith('protein.faa')][0]
-
-                            taska = ''
-                            if 'chromosomes' in selected_database:
-                                print('here !!!!!!!!!!!!!!!', wsize)
-                                if wsize == 7:
-                                    taska = 'blastn-short'
-                                elif wsize == 28:
-                                    taska = 'megablast'
-                                elif wsize == 11:
-                                    taska = 'blastn'
-
-                                blast_cline = NcbiblastnCommandline(query=fp.name,
-                                                                    db=os.path.join(dirtemp, fasta_dbname),
-                                                                    evalue=float(evalue),
-                                                                    perc_identity=perciden,
-                                                                    word_size=wsize, task=taska, outfmt=11,
-                                                                    dust=dust,
-                                                                    soft_masking='false')
-                            elif 'protein' in selected_database:
-                                if wsize == 2:
-                                    taska = 'blastp-short'
-                                elif wsize == 3:
-                                    taska = 'blastp'
-                                elif wsize == 6:
-                                    taska = 'blastp-fast'
-
-                                blast_cline = NcbiblastpCommandline(query=fp.name,
-                                                                    db=os.path.join(dirtemp, fasta_dbname),
-                                                                    evalue=float(evalue),
-                                                                    word_size=wsize, task=taska, outfmt=11,
-                                                                    seg=seg)
-
-                            result, __ = blast_cline()
-                            asn = tempfile.NamedTemporaryFile('w+')
-                            asn.write(result)
-                            asn.read()
-
-                            cline2 = NcbiblastformatterCommandline(archive=asn.name, outfmt='6 std qseq sseq')
-                            blast_tabreformat, __ = cline2()
-                            cline3 = NcbiblastformatterCommandline(archive=asn.name, outfmt=0)
-                            blast_pairwisereformat, __ = cline3()
-
-                            st.success('Blast analysis is finished. You can see the results, if any, below:')
-                            with st.expander('Tabular format'):
-                                if not blast_tabreformat:
-                                    st.warning('No hits found!')
-                                else:
-                                    lists = [x.split('\t') for x in blast_tabreformat.rstrip('\n\r').split('\n')]
-                                    df = pd.DataFrame(lists, columns=['query', 'hit', 'perc_iden', 'aligned', 'mismatches', 'gaps',
-                                                  'query_start', 'query_end', 'hit_start', 'hit_end', 'evalue',
-                                                  'bitscore', 'query_seq', 'hit_seq'])
-                                    df2 = df.set_index('query')
-                                    df2 = df2[df2['perc_iden'].astype(float)>=perciden]
-                                    st.dataframe(df2)
-                            with st.expander('Pairwise format'):
-                                if '{}' in result:
-                                    st.warning('No hits found!')
-                                else:
-                                    st.text(blast_pairwisereformat)
-
-                    fp.close()
-                    asn.close()
-                    # st.text(result)
-                    # df.columns = ['query', 'hit', 'perc_identity', 'length', 'mismatch', 'gap', 'qstart', 'qend',
-                    #               'sstart', 'send', 'evalue', 'bitscore', 'qseq', 'sseq']
-
-                    # AgGrid(
-                    #     df,
-                    #     gridOptions = GridOptionsBuilder.from_dataframe(df).build()
-                    # )
+                    perform_blast(fasta_seq=fasta_input, blast_db=selected_database, wsize=wsize, evalue=evalue,
+                                  perciden=perciden, dust=dust, seg=seg)
 
             with tab3:
                 pass
