@@ -9,9 +9,6 @@ Created on Tue Dec  3 08:26:27 2013
 
 from supabase import create_client, Client
 import streamlit as st
-import time
-import pandas as pd
-from Bio import SeqIO
 from io import StringIO
 
 # Initialize connection.
@@ -36,9 +33,9 @@ def import_data(datalist, species, dtype=('gene', 'cds', 'protein')):
     list_to_import = []
     for l in datalist:
         if dtype == 'gene':
-            gid, chrom, start, end, transcripts, function = l
+            gid, chrom, start, end, transcripts, proteins, function = l
             list_to_import.append({"geneid": gid, "chrom": chrom, "start": start, "end": end,
-                                   "transcripts": transcripts, "function": function, "species": species})
+                                   "transcripts": transcripts, "proteins":proteins, "function": function, "species": species})
         elif dtype == 'cds':
             recid, recseq = l
             list_to_import.append({"seqid": recid, "cdsFasta": str(recseq), "species": species})
@@ -76,13 +73,27 @@ def view_all_data(tablename):
     return data_list
 
 
-def view_species_data(tablename, sel_species):
-    info, count = supabase.table(tablename).select("*").eq("species", sel_species).execute()
+def view_selected_data(tablename, sel_species, colname, searchterm):
+
+    info, count = supabase.table(tablename).select('*').eq("species", sel_species).ilike('%s'%colname, '%{0}%'.format(searchterm)).execute()
+
     all_data = list(info[1])
 
     mlist = []
     for d in all_data:
-        mlist.append(list(d.values()))
+        mlist.append(list(d.values())[1:])  # exclude index
+
+    return mlist
+
+
+def view_species_data(tablename, sel_species):
+    info, count = supabase.table(tablename).select("*").eq("species", sel_species).execute()
+
+    all_data = list(info[1])
+
+    mlist = []
+    for d in all_data:
+        mlist.append(list(d.values())[1:])  # exclude index
 
     return mlist
 

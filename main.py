@@ -3,14 +3,13 @@
 # Press Mayús+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-import emoji
 import pandas as pd
-import streamlit as st
 import base64
 from supabase_conn import *
-import tempfile
 from collections import OrderedDict as od
 from blast import perform_blast
+import textwrap
+import search
 
 # Initialize connection.
 url: str = st.secrets['connections']['supabase']["SUPABASE_URL"]
@@ -84,7 +83,7 @@ def main():
                         'Downloads']
 
         if selected_species is not None:
-            # add_bg_from_local('4656160.jpg')
+            add_bg_from_local('4656160.jpg', )
             tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs(species_menu)
 
             with tab1:
@@ -100,7 +99,8 @@ def main():
                                                        'AGCTGTTCAGCAAGATTTCTACTGAAACACCTTCTCTACCATCT')
 
                 selected_database = st.selectbox('Select database', ['Cannabis sativa CS10 assembly - chromosomes',
-                                                                     'Cannabis sativa CS10 assembly - proteins'], index=None)
+                                                                     'Cannabis sativa CS10 assembly - proteins'],
+                                                 index=None)
                 seg = 'no'
                 dust = 'no'
                 with st.expander('Advanced parameters'):
@@ -108,19 +108,31 @@ def main():
                     col3, col4 = st.columns(2)
 
                     with col1:
-                        perciden = st.slider('Percentage identity:', min_value=0.0, max_value=100.0, value=95.0, step=5.0)
+                        perciden = st.slider('Percentage identity:', min_value=0.0, max_value=100.0, value=95.0,
+                                             step=5.0)
                     with col2:
-                        evalue = st.text_input('E value:')
+                        evalue = st.text_input('E value:', placeholder='0.0001, 1e-100', value='1e-50')
                     with col3:
-                        dict = od({2: 'blastp',3: 'blastx/tblastn/tblastx', 6: 'blastp/blastx/tblastn',
+                        dict = od({2: 'blastp', 3: 'blastx/tblastn/tblastx', 6: 'blastp/blastx/tblastn',
                                    7: 'blastn', 11: 'blastn/blastp', 28: 'blastn'})
-                        dict2 = od({2: 'use with a PROTEIN database (recommended)', 3: 'use with a PROTEIN database',
+                        dict2 = od({2: 'use with a PROTEIN database (default)', 3: 'use with a PROTEIN database',
                                     6: 'use with a PROTEIN database', 7: 'use with a NUCLEOTIDE database',
-                                    11: 'use with a NUCLEOTIDE database', 28: 'use with a NUCLEOTIDE database (recommended)',})
-                        wsize = st.selectbox('Word size', options=dict2.keys(), index=None, format_func=lambda x: str(x) + ":  " + dict2[x])
-                    with col4:
-                        lowcomplex = st.radio('Mask low-complexity sequences', options=['no', 'yes'], horizontal=True,
-                                              index=None)
+                                    11: 'use with a NUCLEOTIDE database', 28: 'use with a NUCLEOTIDE database '
+                                                                              '(default)', })
+
+                        if not selected_database:
+                            wsize = st.selectbox('Word size', options=dict2.keys(), index=None,
+                                                 format_func=lambda x: str(x) + ":  " + dict2[x])
+                        if selected_database and 'chrom' in selected_database:
+                            wsize = st.selectbox('Word size', options=dict2.keys(), index=5,
+                                                 format_func=lambda x: str(x) + ":  " + dict2[x])
+                        elif selected_database and 'protein' in selected_database:
+                            wsize = st.selectbox('Word size', options=dict2.keys(), index=0,
+                                                 format_func=lambda x: str(x) + ":  " + dict2[x])
+                        with col4:
+                            lowcomplex = st.radio('Mask low-complexity sequences', options=['no', 'yes'],
+                                                  horizontal=True,
+                                                  index=None)
 
                         if lowcomplex == 'yes':
                             if 'protein' in selected_database:
@@ -129,14 +141,36 @@ def main():
                                 dust = 'yes'
 
                 # databases = supabase.storage.from_('blastDBs').download('Cannabis_sativa/chr02_1to10mbp.fa.fai').decode().split('\n')
+                runblast = st.button('Run blast', 'runblast')
 
-                if selected_database and fasta_input and perciden and evalue and wsize and lowcomplex:
-
+                if runblast:
                     perform_blast(fasta_seq=fasta_input, blast_db=selected_database, wsize=wsize, evalue=evalue,
                                   perciden=perciden, dust=dust, seg=seg)
 
             with tab3:
-                pass
+                entries = None
+                col1, col2 = st.columns([0.4, 0.6])
+                with col1:
+                    keyword = st.text_input('Keyword search', placeholder='e.g. kinase, DNA polymerase, etc.')
+                with col2:
+                    idsearch = st.text_input('ID search', placeholder='e.g. LOC115694674, XM_030621757.1, XP_030477616.1')
+
+                if keyword or idsearch:
+                    if keyword:
+                        entries = view_selected_data('gene_info', 'cannabis', 'function', keyword)
+                    elif idsearch:
+                        if idsearch.startswith('LOC'):
+                            entries = view_selected_data('gene_info', 'cannabis', 'geneid', idsearch)
+                        elif idsearch.startswith('XM'):
+                            entries = view_selected_data('gene_info', 'cannabis', 'transcripts', idsearch)
+                        elif idsearch.startswith('XM'):
+                            entries = view_selected_data('gene_info', 'cannabis', 'proteins', idsearch)
+
+                    if entries:
+                        search.search_results(entries=entries)
+                    else:
+                        st.warning('No entries found...Please try with a different keyword or ID. \n\n If performing an "ID search", make sure that you abide to the gene and transcript/protein ID nomenclature')
+
             with tab4:
                 pass
             with tab5:
