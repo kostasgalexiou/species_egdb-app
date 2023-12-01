@@ -12,7 +12,6 @@ from supabase_conn import *
 import tempfile
 import os
 from Bio.Blast.Applications import NcbiblastnCommandline, NcbiblastpCommandline, NcbiblastformatterCommandline
-from st_aggrid import AgGrid, GridOptionsBuilder
 from collections import OrderedDict as od
 
 # Initialize connection.
@@ -136,6 +135,7 @@ def main():
                 # databases = supabase.storage.from_('blastDBs').download('Cannabis_sativa/chr02_1to10mbp.fa.fai').decode().split('\n')
 
                 if selected_database and fasta_input and perciden and evalue and wsize and lowcomplex:
+
                     with st.spinner('Generating blast output...'):
                         fp = tempfile.NamedTemporaryFile('w+')
                         fp.write(fasta_input)
