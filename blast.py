@@ -103,11 +103,3 @@ def perform_blast(fasta_seq, blast_db, wsize, evalue, perciden, dust, seg):
 
         fp.close()
         asn.close()
-# st.text(result)
-# df.columns = ['query', 'hit', 'perc_identity', 'length', 'mismatch', 'gap', 'qstart', 'qend',
-#               'sstart', 'send', 'evalue', 'bitscore', 'qseq', 'sseq']
-
-# AgGrid(
-#     df,
-#     gridOptions = GridOptionsBuilder.from_dataframe(df).build()
-# )
