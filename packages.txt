@@ -1,2 +1,2 @@
 ncbi-blast+
-awesome_table
+streamlit-awesome-table
