@@ -83,7 +83,7 @@ def main():
                         'Downloads']
 
         if selected_species is not None:
-            add_bg_from_local('4656160.jpg', )
+            # add_bg_from_local('4656160.jpg', )
             tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs(species_menu)
 
             with tab1:

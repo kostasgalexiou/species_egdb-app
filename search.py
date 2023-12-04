@@ -9,7 +9,6 @@ Created on Tue Dec  3 08:26:27 2013
 
 import streamlit as st
 import pandas as pd
-from awesome_table import AwesomeTable
 import time
 from supabase_conn import view_selected_data
 import textwrap
@@ -25,8 +24,9 @@ def search_results(entries):
     st.write('\n\n\n')
     st.markdown("<h5 style='text-align: left; color: green;'>Gene information:</h5>", unsafe_allow_html=True)
     geneinfo = pd.DataFrame(entries)
-    geneinfo.columns = ['geneid', 'chrom', 'start', 'end', 'transcript', 'protein', 'function', 'species']
-    AwesomeTable(geneinfo)
+    geneinfo.columns = ['Geneid', 'Chrom', 'Start', 'End', 'TranscriptID', 'ProteinID', 'Function', 'Species']
+    st.dataframe(geneinfo, hide_index=True)
+
     csv = geneinfo.to_csv(header=True, index=False)
     st.download_button(':blue[Download gene information]', csv,
                        file_name='gene-info_{}.csv'.format(time_string), mime='txt/csv')

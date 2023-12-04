@@ -5,5 +5,3 @@ pandas==2.1.3
 streamlit==1.28.0
 streamlit_extras==0.3.5
 supabase==2.1.1
-streamlit-awesome-table
-
