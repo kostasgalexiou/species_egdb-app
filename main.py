@@ -12,6 +12,11 @@ url: str = st.secrets['connections']['supabase']["SUPABASE_URL"]
 key: str = st.secrets['connections']['supabase']["SUPABASE_KEY"]
 supabase: Client = create_client(url, key)
 
+st.write(st.session_state)
+keyword = ''
+idsearch = ''
+runblast = ''
+
 
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
