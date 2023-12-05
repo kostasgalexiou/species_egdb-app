@@ -14,15 +14,15 @@ from supabase_conn import view_selected_data
 import textwrap
 
 
-def search_results(entries):
+def search_results(entries, term):
 
     time_string = time.strftime("%m/%d/%Y-%H:%M:%S", time.localtime())
     wrapper = textwrap.TextWrapper(width=70)
 
     st.write('\n\n')
-    st.markdown("<h3 style='text-align: center; color: Green;'>Output results</h3>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: left; color: black;'>Showing results for '%s'</h5>"%term, unsafe_allow_html=True)
     st.write('\n\n\n')
-    st.markdown("<h5 style='text-align: left; color: green;'>Gene information:</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: left; color: green;'>Genomic information:</h5>", unsafe_allow_html=True)
     geneinfo = pd.DataFrame(entries)
     geneinfo.columns = ['Geneid', 'Chrom', 'Start', 'End', 'TranscriptID', 'ProteinID', 'Function', 'Species']
     st.dataframe(geneinfo, hide_index=True)
