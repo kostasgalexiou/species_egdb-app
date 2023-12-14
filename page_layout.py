@@ -14,20 +14,16 @@ from supabase_conn import *
 import search
 
 
-if 'keyword' not in st.session_state or 'idsearch' not in st.session_state or \
-    'runblast' not in st.session_state:
+if 'keyword' not in st.session_state or 'idsearch' not in st.session_state:
     st.session_state.keyword = ''
     st.session_state.idsearch = ''
-    st.session_state.runblast = ''
 
 
 def submit():
     st.session_state.keyword = st.session_state.keywidget
     st.session_state.idsearch = st.session_state.idwidget
-    st.session_state.runblast = st.session_state.blastwidget
     st.session_state.keywidget = ''
     st.session_state.idwidget = ''
-    st.session_state.fastawidget = ''
 
 
 def generate_page(species):
@@ -48,8 +44,6 @@ def generate_page(species):
                                                'CAGGCCTCTGACATTTGGGCTCTTGGGTGTGTTGTTCTTGAGAT'
                                                'GTTGACTGGAAGTACGCCATGGGATGTAAATTTGGGGCAGGAAG'
                                                'AGCTGTTCAGCAAGATTTCTACTGAAACACCTTCTCTACCATCT')
-
-        # fasta_input = st.session_state.fasta_input
 
         selected_database = st.selectbox('Select database', ['Cannabis sativa CS10 assembly - chromosomes',
                                                              'Cannabis sativa CS10 assembly - proteins'],
@@ -94,15 +88,12 @@ def generate_page(species):
                         dust = 'yes'
 
         # databases = supabase.storage.from_('blastDBs').download('Cannabis_sativa/chr02_1to10mbp.fa.fai').decode().split('\n')
-        st.button('Run blast', key='blastwidget', on_click=submit)
-        runblast = st.session_state.runblast
+
+        runblast = st.button('Run blast')
 
         if runblast:
             perform_blast(fasta_seq=fasta_input, blast_db=selected_database, wsize=wsize, evalue=evalue,
                           perciden=perciden, dust=dust, seg=seg)
-
-        if st.session_state['runblast'] != '':
-            st.session_state['runblast'] = ''
 
     with tab3:
         entries = None

@@ -32,11 +32,6 @@ def add_bg_from_local(image_file):
 
 def main():
 
-    keyword = ''
-    idsearch = ''
-    runblast = ''
-    st.write(st.session_state)
-
     choice = st.sidebar.radio("What do you want to do?",
                               ["Launch a new species interface :rocket:", "Select species :seedling:"], index=None)
 
@@ -77,12 +72,10 @@ def main():
         selected_species = st.sidebar.radio('select species', species, label_visibility="collapsed", index=None)
 
         if selected_species == 'cannabis :herb:':
-
             generate_page(selected_species)
 
         elif selected_species == 'b':
             generate_page(selected_species)
-
 
 
 if __name__ == "__main__":
