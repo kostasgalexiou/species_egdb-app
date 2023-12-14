@@ -72,9 +72,15 @@ def main():
         selected_species = st.sidebar.radio('select species', species, label_visibility="collapsed", index=None)
 
         if selected_species == 'cannabis :herb:':
+            if 'keyword' not in st.session_state or 'idsearch' not in st.session_state:
+                st.session_state.keyword = ''
+                st.session_state.idsearch = ''
             generate_page(selected_species)
 
         elif selected_species == 'b':
+            if 'keyword' not in st.session_state or 'idsearch' not in st.session_state:
+                st.session_state.keyword = ''
+                st.session_state.idsearch = ''
             generate_page(selected_species)
 
 
