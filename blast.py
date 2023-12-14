@@ -24,7 +24,7 @@ supabase: Client = create_client(url, key)
 
 def perform_blast(fasta_seq, blast_db, wsize, evalue, perciden, dust, seg):
     
-    with st.spinner('Generating blast output...'):
+    with st.spinner('Running blast...'):
         fp = tempfile.NamedTemporaryFile('w+')
         fp.write(fasta_seq)
         fp.read()
