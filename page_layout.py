@@ -17,7 +17,8 @@ import search
 if 'keyword' not in st.session_state or 'idsearch' not in st.session_state:
     st.session_state.keyword = ''
     st.session_state.idsearch = ''
-
+    st.session_state.keywidget = ''
+    st.session_state.idwidget = ''
 
 def submit():
     st.session_state.keyword = st.session_state.keywidget
@@ -140,6 +141,7 @@ def generate_page(species):
             st.session_state.idsearch = ''
 
     with tab4:
+        # st.file_uploader()
         pass
     with tab5:
         pass
