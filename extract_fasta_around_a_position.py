@@ -9,6 +9,7 @@ import os.path as op
 import os
 from collections import OrderedDict as od
 import subprocess as subp
+import streamlit as st
 
 
 def infile2dict(file_contents):
@@ -59,10 +60,10 @@ def extract_fasta(fasta, range, allele_info, output, infile_dict=od()):
                             if a.startswith('>'):
                                 continue
                             single_line += a.strip()
-
+                        st.write(single_line, '$$$$$$$$$$$')
                         l_seq, genome_ref, r_seq = [single_line[:range].upper(),
-                                                           single_line[range].upper(),
-                                                           single_line[range+1:].upper()]
+                                                    single_line[range].upper(),
+                                                    single_line[range+1:].upper()]
 
                         if allele_info == 'yes':
                             ref = rest[0]
