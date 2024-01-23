@@ -95,7 +95,7 @@ def main():
         selected_species = st.sidebar.radio('select species', species, label_visibility="collapsed", index=None)
 
         if selected_species == 'cannabis :herb:':
-            image = Image.open('/home/kalexiou/Documentos/canamo.jpg')
+            image = Image.open('./images/canamo.jpg')
             new_image = image.resize((1400, 200))
             st.image(new_image)
             generate_page(selected_species)
