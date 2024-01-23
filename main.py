@@ -1,11 +1,15 @@
 # This is a sample Python script.
+import stat
 
 # Press Mayús+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-import pandas as pd
 import base64
 from page_layout import *
+import streamlit as st
+from PIL import Image
+
+st.set_page_config(layout="wide")
 
 # Initialize connection.
 url: str = st.secrets['connections']['supabase']["SUPABASE_URL"]
@@ -13,25 +17,44 @@ key: str = st.secrets['connections']['supabase']["SUPABASE_KEY"]
 supabase: Client = create_client(url, key)
 
 
-def add_bg_from_local(image_file):
-    with open(image_file, "rb") as image_file:
-        encoded_string = base64.b64encode(image_file.read())
+def add_image_to_header():
 
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
-            background-size: cover
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+    custom_html = """
+    <div class="banner">
+        <img src="4656160.jpg" alt="Banner Image">
+    </div>
+    <style>
+        .banner {
+            width: 160%;
+            height: 200px;
+            overflow: hidden;
+        }
+        .banner img {
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+    """
+    # Display the custom HTML
+    st.components.v1.html(custom_html)
+    # with open(image_file, "rb") as image_file:
+    #     encoded_string = base64.b64encode(image_file.read())
+    #
+    # st.markdown(
+    #     f"""
+    #     <style>
+    #     .stApp {{
+    #         background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+    #         background-size: cover
+    #     }}
+    #     </style>
+    #     """,
+    #     unsafe_allow_html=True
+    # )
 
 
 def main():
-
+    # add_image_to_header()
     choice = st.sidebar.radio("What do you want to do?",
                               ["Launch a new species interface :rocket:", "Select species :seedling:"], index=None)
 
@@ -72,15 +95,12 @@ def main():
         selected_species = st.sidebar.radio('select species', species, label_visibility="collapsed", index=None)
 
         if selected_species == 'cannabis :herb:':
-            if 'keyword' not in st.session_state or 'idsearch' not in st.session_state:
-                st.session_state.keyword = ''
-                st.session_state.idsearch = ''
+            image = Image.open('/home/kalexiou/Documentos/canamo.jpg')
+            new_image = image.resize((1400, 200))
+            st.image(new_image)
             generate_page(selected_species)
 
         elif selected_species == 'b':
-            if 'keyword' not in st.session_state or 'idsearch' not in st.session_state:
-                st.session_state.keyword = ''
-                st.session_state.idsearch = ''
             generate_page(selected_species)
 
 

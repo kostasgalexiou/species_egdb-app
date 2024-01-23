@@ -20,12 +20,36 @@ def search_results(entries, term):
     wrapper = textwrap.TextWrapper(width=70)
 
     st.write('\n\n')
-    st.markdown("<h5 style='text-align: left; color: black;'>Showing results for '%s'</h5>"%term, unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: left; color: white;'>Showing results for '%s'</h5>"%term, unsafe_allow_html=True)
     st.write('\n\n\n')
-    st.markdown("<h5 style='text-align: left; color: green;'>Genomic information:</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: left; color: #FF4B4B;'>Genomic information:</h5>", unsafe_allow_html=True)
     geneinfo = pd.DataFrame(entries)
     geneinfo.columns = ['Geneid', 'Chrom', 'Start', 'End', 'TranscriptID', 'ProteinID', 'Function', 'Species']
-    st.dataframe(geneinfo, hide_index=True)
+
+    # add a column with jbrowse links
+    chroms = geneinfo.Chrom.values.tolist()
+    starts = geneinfo.Start.values.tolist()
+    ends = geneinfo.End.values.tolist()
+
+    link_list = []
+    for c,s,e in zip(chroms, starts, ends):
+        jb_link = 'http://localhost/jbrowse-1.16.11/?data=data%2Fjson%2Fcannabis%2Fcs10&loc={0}%3A{1}..{2}&tracks=cs10%2Ccannabis-cs10_genes&highlight='.format(c,s,e)
+        link_list.append(jb_link)
+
+    geneinfo.insert(1, 'Links', link_list)
+
+    st.data_editor(
+        geneinfo,
+        column_config={
+            "Links": st.column_config.LinkColumn(
+                "Links",
+                validate="^https://.+$",
+                max_chars=100,
+                display_text="Jbrowse link"
+            )
+        },
+        hide_index=True,
+    )
 
     csv = geneinfo.to_csv(header=True, index=False)
     st.download_button(':blue[Download gene information]', csv,
@@ -53,7 +77,7 @@ def search_results(entries, term):
 
     st.write('\n\n\n')
 
-    st.markdown("<h5 style='text-align: left; color: green;'> mRNA sequence(s):</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: left; color: #FF4B4B;'> mRNA sequence(s):</h5>", unsafe_allow_html=True)
 
     # string wrapping
     c_wrapped_string = ''
@@ -64,7 +88,7 @@ def search_results(entries, term):
         c_wrapped_string += string + '\n\n'
     st.code(c_wrapped_string)
 
-    st.markdown("<h5 style='text-align: left; color: green;'> protein sequence(s):</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: left; color: #FF4B4B;'> protein sequence(s):</h5>", unsafe_allow_html=True)
 
     # string wrapping
     p_wrapped_string = ''

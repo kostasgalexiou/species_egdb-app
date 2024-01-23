@@ -8,10 +8,8 @@ Created on Tue Dec  3 08:26:27 2013
 """
 import streamlit as st
 import tempfile
-from streamlit_extras.dataframe_explorer import dataframe_explorer
 import os
 from Bio.Blast.Applications import NcbiblastnCommandline, NcbiblastpCommandline, NcbiblastformatterCommandline
-from collections import OrderedDict as od
 from supabase import create_client, Client
 import pandas as pd
 
@@ -22,21 +20,31 @@ key: str = st.secrets['connections']['supabase']["SUPABASE_KEY"]
 supabase: Client = create_client(url, key)
 
 
+def create_tmp_files(tempdir, infile):
+    with open(os.path.join(tempdir, infile), 'wb+') as f:
+        bucketfile = supabase.storage.from_('blastDBs').download(
+            'Cannabis_sativa/%s' % infile)
+        f.write(bucketfile)
+
+
 def perform_blast(fasta_seq, blast_db, wsize, evalue, perciden, dust, seg):
     
     with st.spinner('Running blast...'):
+
         fp = tempfile.NamedTemporaryFile('w+')
         fp.write(fasta_seq)
         fp.read()
-        # fp.close()
 
         with tempfile.TemporaryDirectory() as dirtemp:
+
             for i in supabase.storage.from_('blastDBs').list('Cannabis_sativa'):
                 filename = i["name"]
-                with open(os.path.join(dirtemp, filename), 'wb+') as f:
-                    bucketfile = supabase.storage.from_('blastDBs').download(
-                        'Cannabis_sativa/%s' % filename)
-                    f.write(bucketfile)
+                if 'chromo' in blast_db and 'chr' in filename:
+                    file_ = filename
+                    create_tmp_files(dirtemp, file_)
+                elif 'prot' in blast_db and 'protein' in filename:
+                    file_ = filename
+                    create_tmp_files(dirtemp, file_)
 
             if 'chromo' in blast_db:
                 fasta_dbname = [x for x in os.listdir(dirtemp.title().lower()) if x.endswith('.fa')][0]

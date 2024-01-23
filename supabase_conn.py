@@ -16,6 +16,7 @@ url: str = st.secrets['connections']['supabase']["SUPABASE_URL"]
 key: str = st.secrets['connections']['supabase']["SUPABASE_KEY"]
 supabase: Client = create_client(url, key)
 
+
 def getlist_from_fasta(uploaded_fasta):
     fasta_list = StringIO(uploaded_fasta.getvalue().decode("utf-8")).read().split('>')[1:]
     fasta_list2 = []
