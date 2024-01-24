@@ -77,7 +77,6 @@ def get_avg_value_per_tissue(melted_df):  # Tissue, Replicates, Gene, Counts
             average = np.average(gr2.Counts.values.tolist())
             count_list.append(str(average))
 
-
     # generate the dictionary that will be passed into a dataframe
     dict_for_df['Gene'] = gene_list
     dict_for_df['Tissue'] = tissue_list
@@ -90,36 +89,33 @@ def get_avg_value_per_tissue(melted_df):  # Tissue, Replicates, Gene, Counts
 
 def extract_function(v_file, dirtemp, ffile, srange, ainfo):
 
-        run_analysis = st.button('Get fasta sequences')
+    with open(op.join(dirtemp, ffile), 'wb+') as f:
 
-        if run_analysis:
-            with st.spinner('Please wait...'):
-                with open(op.join(dirtemp, ffile), 'wb+') as f:
+        contents = v_file.getvalue().decode("utf-8").split('\n')[:-1]
 
-                    contents = v_file.getvalue().decode("utf-8").split('\n')[:-1]
+        inf_dict = infile2dict(contents)
 
-                    inf_dict = infile2dict(contents)
+        bucketfile = supabase.storage.from_('blastDBs').download('Cannabis_sativa/%s' % ffile)
+        f.write(bucketfile)
 
-                    bucketfile = supabase.storage.from_('blastDBs').download('Cannabis_sativa/%s' % ffile)
-                    f.write(bucketfile)
+        dataf, error_msg = extract_fasta(fasta=op.join(dirtemp, ffile), range_=srange,
+                                         allele_info=ainfo,
+                                         infile_dict=inf_dict)
 
-                    dataf, error_msg = extract_fasta(fasta=op.join(dirtemp, ffile), range_=srange,
-                                                     allele_info=ainfo,
-                                                     infile_dict=inf_dict)
+        if error_msg:
+            st.warning(error_msg)
+        else:
+            dataf_csv = dataf.to_csv(header=True, index=False, sep='\t')
 
-                    if error_msg:
-                        st.warning(error_msg)
-                    else:
-                        dataf_csv = dataf.to_csv(header=True, index=False, sep='\t')
+            fname = '%s_plusFasta.tab' % v_file.name.split('.')[0]
 
-                        fname = '%s_plusFasta.tab' % v_file.name.split('.')[0]
+            outfile = op.join(os.getcwd(), fname)
+            st.write(outfile)
+            with open(outfile, 'w') as out:
+                out.write(dataf_csv)
 
-                        outfile = op.join(os.getcwd(), fname)
-                        st.write(outfile)
-                        with open(outfile, 'w') as out:
-                            out.write(dataf_csv)
 
-        return
+    return
 
 
 def generate_page(species):
@@ -247,7 +243,13 @@ def generate_page(species):
                 50)
             allele_info = st.radio('Do you have REF and ALT allele information in the input file?',
                                    options=['yes', 'no'], index=0, horizontal=True)
-            extract_function(v_file=variant_file, dirtemp=os.getcwd(), ffile=fasta_file, srange=seq_range, ainfo=allele_info)
+
+            run_analysis = st.button('Get fasta sequences')
+
+            if run_analysis:
+                with st.spinner('Please wait...'):
+                    extract_function(v_file=variant_file, dirtemp=os.getcwd(), ffile=fasta_file, srange=seq_range,
+                                     ainfo=allele_info)
 
                 # if dataf_csv:
                 #     downl = st.download_button('download', data=dataf_csv, file_name=fname)
