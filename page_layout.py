@@ -107,17 +107,35 @@ def extract_function(v_file, dirtemp, ffile, srange, ainfo):
         if error_msg:
             st.warning(error_msg)
         else:
-            dataf_csv = dataf.to_csv(header=True, index=False, sep='\t')
-
-            fname = '%s_plusFasta.tab' % v_file.name.split('.')[0]
-
-            outfile = op.join(os.getcwd(), fname)
-            st.write(outfile)
-            with open(outfile, 'w') as out:
-                out.write(dataf_csv)
+            return dataf
 
 
-    return
+import base64
+
+import streamlit as st
+import pandas as pd
+
+
+def download_link(object_to_download, download_filename, download_link_text):
+    """
+    Generates a link to download the given object_to_download.
+
+    object_to_download (str, pd.DataFrame):  The object to be downloaded.
+    download_filename (str): filename and extension of file. e.g. mydata.csv, some_txt_output.txt
+    download_link_text (str): Text to display for download link.
+
+    Examples:
+    download_link(YOUR_DF, 'YOUR_DF.csv', 'Click here to download data!')
+    download_link(YOUR_STRING, 'YOUR_STRING.txt', 'Click here to download your text!')
+
+    """
+    if isinstance(object_to_download,pd.DataFrame):
+        object_to_download = object_to_download.to_csv(header=True, index=False)
+
+    # some strings <-> bytes conversions necessary here
+    b64 = base64.b64encode(object_to_download.encode()).decode()
+
+    return f'<a href="data:file/txt;base64,{b64}" download="{download_filename}">{download_link_text}</a>'
 
 
 def generate_page(species):
@@ -246,12 +264,22 @@ def generate_page(species):
             allele_info = st.radio('Do you have REF and ALT allele information in the input file?',
                                    options=['yes', 'no'], index=0, horizontal=True)
 
-            run_analysis = st.button('Get fasta sequences')
+            # Examples
+            df = pd.DataFrame({'x': list(range(10)), 'y': list(range(10))})
+            df_to_download = extract_function(v_file=variant_file, dirtemp=os.getcwd(), ffile=fasta_file,
+                                              srange=seq_range, ainfo=allele_info)
 
+            run_analysis = st.button('Get fasta sequences')
             if run_analysis:
                 with st.spinner('Please wait...'):
-                    extract_function(v_file=variant_file, dirtemp=os.getcwd(), ffile=fasta_file, srange=seq_range,
-                                     ainfo=allele_info)
+                    # csv_to_save = extract_function(v_file=variant_file, dirtemp=os.getcwd(), ffile=fasta_file,
+                    #                                srange=seq_range, ainfo=allele_info)
+
+                    # fname = '%s_plusFasta.tab' % variant_file.name.split('.')[0]
+
+                    tmp_download_link = download_link(df_to_download, 'YOUR_DF.csv', 'Click here to download your data!')
+                    st.markdown(tmp_download_link, unsafe_allow_html=True)
+
 
                 # if dataf_csv:
                 #     downl = st.download_button('download', data=dataf_csv, file_name=fname)
