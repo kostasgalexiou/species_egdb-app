@@ -87,7 +87,7 @@ def get_avg_value_per_tissue(melted_df):  # Tissue, Replicates, Gene, Counts
     return new_df
 
 
-def extract_func(v_file, dirtemp):
+def extract_function(v_file, dirtemp):
         work_dir = dirtemp.open()
         fasta_names = [i["name"] for i in supabase.storage.from_('blastDBs').list('Cannabis_sativa') if
                        i["name"].endswith('.fa') or i["name"].endswith('.faa') or i["name"].endswith('.fasta')]
@@ -129,22 +129,6 @@ def extract_func(v_file, dirtemp):
 
         return
 
-
-def extract_cloud(v_file):
-    fasta_names = [i["name"] for i in supabase.storage.from_('blastDBs').list('Cannabis_sativa') if
-                   i["name"].endswith('.fa') or i["name"].endswith('.faa') or i["name"].endswith('.fasta')]
-    fasta_file = st.selectbox('Select fasta file', options=fasta_names)
-
-    seq_range = st.number_input(
-        'Enter size of the fasta to be extracted around the variant (Default: 50nt)',
-        50)
-    allele_info = st.radio('Do you have REF and ALT allele information in the input file?',
-                           options=['yes', 'no'], index=0, horizontal=True)
-
-    run_analysis = st.button('Get fasta sequences')
-
-    if run_analysis:
-        with st.spinner('Please wait...'):
 
 def generate_page(species):
     st.header('_Cannabis sativa_ portal', divider='rainbow')
@@ -262,7 +246,7 @@ def generate_page(species):
                                         key='varfilewidget_%s' % species.split(' ')[0])
 
         if variant_file:
-            extract_func(v_file=variant_file, dirtemp=)
+            extract_function(v_file=variant_file, dirtemp='')
 
                 # if dataf_csv:
                 #     downl = st.download_button('download', data=dataf_csv, file_name=fname)
