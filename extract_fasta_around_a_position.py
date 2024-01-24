@@ -39,7 +39,7 @@ def extract_fasta(fasta, range_, allele_info, infile_dict=od()):
     output_list = list()
     out_df = None
     error_message = None
-
+    header = list()
 
     for k, pos_dict in infile_dict.items():
         for p, rest in pos_dict.items():
@@ -67,6 +67,7 @@ def extract_fasta(fasta, range_, allele_info, infile_dict=od()):
                         output_list.append([snpid, k, position, genome_ref,refallele, altallele,
                                             l_seq + '[' + refallele + '/' + altallele + ']' + r_seq])
                     else:
+                        right_seq = ''
                         if len(refallele) > 1 and len(altallele) > 1:
                             st.error('Site {0}:{1} is a MNP'.format(k, position))
                             continue
@@ -84,11 +85,11 @@ def extract_fasta(fasta, range_, allele_info, infile_dict=od()):
                     output_list.append([snpid, k, position, genome_ref,
                                         l_seq + '@' + r_seq])
 
-                print(output_list, header)
                 out_df = pd.DataFrame(data=output_list, columns=header)
 
             except KeyError:
                 error_message = "It seems that the input file's chromosome or protein IDs are not found in the " \
-                                "fasta file selected above. Make sure that you have selected the correct fasta file from the drop-down menu."
+                                "fasta file selected above. Make sure that you have selected the correct fasta file " \
+                                "from the drop-down menu."
 
     return out_df, error_message

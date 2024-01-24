@@ -87,6 +87,65 @@ def get_avg_value_per_tissue(melted_df):  # Tissue, Replicates, Gene, Counts
     return new_df
 
 
+def extract_func(v_file, dirtemp):
+        work_dir = dirtemp.open()
+        fasta_names = [i["name"] for i in supabase.storage.from_('blastDBs').list('Cannabis_sativa') if
+                       i["name"].endswith('.fa') or i["name"].endswith('.faa') or i["name"].endswith('.fasta')]
+        fasta_file = st.selectbox('Select fasta file', options=fasta_names)
+
+        seq_range = st.number_input(
+            'Enter size of the fasta to be extracted around the variant (Default: 50nt)',
+            50)
+        allele_info = st.radio('Do you have REF and ALT allele information in the input file?',
+                               options=['yes', 'no'], index=0, horizontal=True)
+
+        run_analysis = st.button('Get fasta sequences')
+
+        if run_analysis:
+            with st.spinner('Please wait...'):
+                with open(op.join(work_dir, fasta_file), 'wb+') as f:
+
+                    contents = v_file.getvalue().decode("utf-8").split('\n')[:-1]
+
+                    inf_dict = infile2dict(contents)
+
+                    bucketfile = supabase.storage.from_('blastDBs').download('Cannabis_sativa/%s' % fasta_file)
+                    f.write(bucketfile)
+
+                    dataf, error_msg = extract_fasta(fasta=op.join(dirtemp, fasta_file), range_=seq_range,
+                                                     allele_info=allele_info,
+                                                     infile_dict=inf_dict)
+
+                    if error_msg:
+                        st.warning(error_msg)
+                    else:
+                        dataf_csv = dataf.to_csv(header=True, index=False, sep='\t')
+
+                        fname = '%s_plusFasta.tab' % v_file.name.split('.')[0]
+
+                        outfile = op.join(os.getcwd(), fname)
+                        with open(outfile, 'w') as out:
+                            out.write(dataf_csv)
+
+        return
+
+
+def extract_cloud(v_file):
+    fasta_names = [i["name"] for i in supabase.storage.from_('blastDBs').list('Cannabis_sativa') if
+                   i["name"].endswith('.fa') or i["name"].endswith('.faa') or i["name"].endswith('.fasta')]
+    fasta_file = st.selectbox('Select fasta file', options=fasta_names)
+
+    seq_range = st.number_input(
+        'Enter size of the fasta to be extracted around the variant (Default: 50nt)',
+        50)
+    allele_info = st.radio('Do you have REF and ALT allele information in the input file?',
+                           options=['yes', 'no'], index=0, horizontal=True)
+
+    run_analysis = st.button('Get fasta sequences')
+
+    if run_analysis:
+        with st.spinner('Please wait...'):
+
 def generate_page(species):
     st.header('_Cannabis sativa_ portal', divider='rainbow')
     species_menu = ['About ❓', 'BLAST 💥', 'Search 🔎', 'Information Extraction ℹ️', 'JBrowse 🧬', 'Gene Expression 📊',
@@ -203,46 +262,12 @@ def generate_page(species):
                                         key='varfilewidget_%s' % species.split(' ')[0])
 
         if variant_file:
-            with tempfile.TemporaryDirectory() as dirtemp:
-                fasta_names = [i["name"] for i in supabase.storage.from_('blastDBs').list('Cannabis_sativa') if
-                               i["name"].endswith('.fa') or i["name"].endswith('.faa') or i["name"].endswith('.fasta')]
-                fasta_file = st.selectbox('Select fasta file', options=fasta_names)
+            extract_func(v_file=variant_file, dirtemp=)
 
-                seq_range = st.number_input(
-                    'Enter size of the fasta to be extracted around the variant (Default: 50nt)',
-                    50)
-                allele_info = st.radio('Do you have REF and ALT allele information in the input file?',
-                                       options=['yes', 'no'], index=0, horizontal=True)
-
-                run_analysis = st.button('Get fasta sequences')
-
-                if run_analysis:
-                    with st.spinner('Please wait...'):
-                        with open(op.join(dirtemp, fasta_file), 'wb+') as f:
-
-                            contents = variant_file.getvalue().decode("utf-8").split('\n')[:-1]
-
-                            inf_dict = infile2dict(contents)
-
-                            bucketfile = supabase.storage.from_('blastDBs').download('Cannabis_sativa/%s' % fasta_file)
-                            f.write(bucketfile)
-
-                            dataf, error_msg = extract_fasta(fasta=op.join(dirtemp, fasta_file), range_=seq_range,
-                                                             allele_info=allele_info,
-                                                             infile_dict=inf_dict)
-
-                            if error_msg:
-                                st.warning(error_msg)
-                            else:
-                                dataf_csv = dataf.to_csv(header=True, index=False, sep='\t')
-
-                                fname = '%s_plusFasta.tab' % variant_file.name.split('.')[0]
-
-                                outfile = op.join(os.getcwd(), fname)
-                                with open(outfile, 'w') as out:
-                                    out.write(dataf_csv)
-
-                                st.success('Results are saved in %s' % outfile)
+                # if dataf_csv:
+                #     downl = st.download_button('download', data=dataf_csv, file_name=fname)
+                #     if downl:
+                #         st.success('Results are saved in %s' % outfile)
 
     with tab5:
         iframe_src = "http://localhost/jbrowse-1.16.11/?data=data%2Fjson%2F{0}%2Fcs10&loc=Cs10.Chr07%3A1..71238074&tracks=cs10%2Ccannabis-cs10_genes&highlight=".format(
