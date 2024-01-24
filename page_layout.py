@@ -227,19 +227,22 @@ def generate_page(species):
                             bucketfile = supabase.storage.from_('blastDBs').download('Cannabis_sativa/%s' % fasta_file)
                             f.write(bucketfile)
 
-                            dataf = extract_fasta(fasta=op.join(dirtemp, fasta_file), range=seq_range,
-                                                  allele_info=allele_info,
-                                                  infile_dict=inf_dict)
+                            dataf, error_msg = extract_fasta(fasta=op.join(dirtemp, fasta_file), range_=seq_range,
+                                                             allele_info=allele_info,
+                                                             infile_dict=inf_dict)
 
-                            dataf_csv = dataf.to_csv(header=True, index=False, sep='\t')
+                            if error_msg:
+                                st.warning(error_msg)
+                            else:
+                                dataf_csv = dataf.to_csv(header=True, index=False, sep='\t')
 
-                            fname = '%s_plusFasta.tab' % variant_file.name.split('.')[0]
+                                fname = '%s_plusFasta.tab' % variant_file.name.split('.')[0]
 
-                            outfile = op.join(os.getcwd(), fname)
-                            with open(outfile, 'w') as out:
-                                out.write(dataf_csv)
+                                outfile = op.join(os.getcwd(), fname)
+                                with open(outfile, 'w') as out:
+                                    out.write(dataf_csv)
 
-                            st.success('Results are saved in %s' % outfile)
+                                st.success('Results are saved in %s' % outfile)
 
     with tab5:
         iframe_src = "http://localhost/jbrowse-1.16.11/?data=data%2Fjson%2F{0}%2Fcs10&loc=Cs10.Chr07%3A1..71238074&tracks=cs10%2Ccannabis-cs10_genes&highlight=".format(
