@@ -339,7 +339,7 @@ def generate_page(species):
                 with st.expander(label='$\Large Average\ values$'):
                     col1, col2, col3 = st.columns([0.3, 0.4, 0.3])
                     with col2:
-                        selected_genes = st.multiselect('Select gene:', options=user_geneids.split(),
+                        selected_genes = st.multiselect('Select gene:', options=user_geneids.split(), default=user_geneids.split(),
                                                         key='glistavg_%s' % species)
 
                     if selected_genes:
