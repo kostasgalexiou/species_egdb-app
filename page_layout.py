@@ -6,8 +6,10 @@ Created on Tue Dec  3 08:26:27 2013
 
 @author: kalexiou
 """
+import os
 import tempfile
 
+import st_keyup
 import streamlit
 
 from blast import perform_blast
@@ -234,16 +236,12 @@ def generate_page(species):
                             bucketfile = supabase.storage.from_('blastDBs').download('Cannabis_sativa/%s' % filename)
                             f.write(bucketfile)
 
-                            outfile = variant_file.name.split('.')[0] + '_plusFasta.tab'
+                            outfile = op.join(os.getcwd(), variant_file.name.split('.')[0] + '_plusFasta.tab')
                             extract_fasta(fasta=op.join(dirtemp, filename), range=seq_range, allele_info=allele_info,
                                           output=outfile, infile_dict=inf_dict)
 
-                st.success('Results are saved in: {0}/{1}'.format(os.getcwd(), outfile))
+                            st.success('Results are saved in %s' % outfile)
 
-            # if variant_type and fasta_file and seq_range and allele_info and variant_type:
-            #     st.button('Get fasta sequences')
-            #     st.download_button(label='Download results', data=)
-            # st.text_input('Name of the output file', key='outfile_%s' % species.split(' ')[0])
 
     with tab5:
         iframe_src = "http://localhost/jbrowse-1.16.11/?data=data%2Fjson%2F{0}%2Fcs10&loc=Cs10.Chr07%3A1..71238074&tracks=cs10%2Ccannabis-cs10_genes&highlight=".format(
@@ -266,7 +264,8 @@ def generate_page(species):
 
         with col3:
             options = ['exp1', 'exp2']
-            datatable = st.selectbox('$\\bold{Select\ expression\ dataset:}$', options=options, index=None, placeholder='Choose a dataset',
+            datatable = st.selectbox('$\\bold{Select\ expression\ dataset:}$', options=options, index=None,
+                                     placeholder='Choose a dataset',
                                      key='datasetwidget_%s' % species)
 
         if counts or datatable:
@@ -349,7 +348,7 @@ def generate_page(species):
                     table_df = pd.DataFrame(gene_df[user_geneids.split()]).T
                     table_df = table_df.sort_index(axis=1)
                     st.write(table_df)
-            with tab7:
-                pass
-            with tab8:
-                pass
+    with tab7:
+        pass
+    with tab8:
+        pass
