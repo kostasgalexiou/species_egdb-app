@@ -89,7 +89,6 @@ def get_avg_value_per_tissue(melted_df):  # Tissue, Replicates, Gene, Counts
 
 
 def extract_function(v_file, dirtemp):
-        work_dir = dirtemp.open()
         fasta_names = [i["name"] for i in supabase.storage.from_('blastDBs').list('Cannabis_sativa') if
                        i["name"].endswith('.fa') or i["name"].endswith('.faa') or i["name"].endswith('.fasta')]
         fasta_file = st.selectbox('Select fasta file', options=fasta_names)
@@ -104,7 +103,7 @@ def extract_function(v_file, dirtemp):
 
         if run_analysis:
             with st.spinner('Please wait...'):
-                with open(op.join(work_dir, fasta_file), 'wb+') as f:
+                with open(op.join(dirtemp, fasta_file), 'wb+') as f:
 
                     contents = v_file.getvalue().decode("utf-8").split('\n')[:-1]
 
