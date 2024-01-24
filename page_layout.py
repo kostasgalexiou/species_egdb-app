@@ -102,6 +102,8 @@ def extract_function(v_file, dirtemp, ffile, srange, ainfo):
                                          allele_info=ainfo,
                                          infile_dict=inf_dict)
 
+        st.write(dataf)
+
         if error_msg:
             st.warning(error_msg)
         else:
