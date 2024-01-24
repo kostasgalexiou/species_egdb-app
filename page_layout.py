@@ -6,12 +6,7 @@ Created on Tue Dec  3 08:26:27 2013
 
 @author: kalexiou
 """
-import os
 import tempfile
-
-import st_keyup
-import streamlit
-
 from blast import perform_blast
 from supabase_conn import *
 import search
@@ -22,7 +17,6 @@ from expressionData import *
 import plotly.express as px
 from collections import Counter
 import numpy as np
-import plotly.graph_objects as go
 
 pd.options.plotting.backend = 'plotly'
 
@@ -57,7 +51,6 @@ def get_avg_value_per_tissue(melted_df):  # Tissue, Replicates, Gene, Counts
     gene_grouped = melted_df.groupby('Gene')
 
     dict_for_df = od()
-    dict_error = od()
 
     gene_list = list()
     tissue_list = list()
@@ -83,7 +76,6 @@ def get_avg_value_per_tissue(melted_df):  # Tissue, Replicates, Gene, Counts
             average = np.average(gr2.Counts.values.tolist())
             count_list.append(str(average))
 
-        # dict_error[g] = t2values
 
     # generate the dictionary that will be passed into a dataframe
     dict_for_df['Gene'] = gene_list
@@ -211,37 +203,43 @@ def generate_page(species):
                                         key='varfilewidget_%s' % species.split(' ')[0])
 
         if variant_file:
-            fasta_names = [i["name"] for i in supabase.storage.from_('blastDBs').list('Cannabis_sativa') if
-                           i["name"].endswith('.fa') or i["name"].endswith('.faa') or i["name"].endswith('.fasta')]
-            fasta_file = st.selectbox('Select fasta file', options=fasta_names)
+            with tempfile.TemporaryDirectory() as dirtemp:
+                fasta_names = [i["name"] for i in supabase.storage.from_('blastDBs').list('Cannabis_sativa') if
+                               i["name"].endswith('.fa') or i["name"].endswith('.faa') or i["name"].endswith('.fasta')]
+                fasta_file = st.selectbox('Select fasta file', options=fasta_names)
 
-            seq_range = st.number_input('Enter size of the fasta to be extracted around the variant (Default: 50nt)',
-                                        50)
-            allele_info = st.radio('Do you have REF and ALT allele information in the input file?',
-                                   options=['yes', 'no'], index=0, horizontal=True)
+                seq_range = st.number_input(
+                    'Enter size of the fasta to be extracted around the variant (Default: 50nt)',
+                    50)
+                allele_info = st.radio('Do you have REF and ALT allele information in the input file?',
+                                       options=['yes', 'no'], index=0, horizontal=True)
 
-            run_analysis = st.button('Get fasta sequences')
+                run_analysis = st.button('Get fasta sequences')
 
-            if run_analysis:
-                with st.spinner('Please wait...'):
-                    contents = variant_file.getvalue().decode("utf-8").split('\n')[:-1]
+                if run_analysis:
+                    with st.spinner('Please wait...'):
+                        with open(op.join(dirtemp, fasta_file), 'wb+') as f:
 
-                    inf_dict = infile2dict(contents)
+                            contents = variant_file.getvalue().decode("utf-8").split('\n')[:-1]
 
-                    with tempfile.TemporaryDirectory() as dirtemp:
-                        filename = [i['name'] for i in supabase.storage.from_('blastDBs').list('Cannabis_sativa') if
-                                    i["name"].endswith('.fa')][0]
+                            inf_dict = infile2dict(contents)
 
-                        with open(op.join(dirtemp, filename), 'wb+') as f:
-                            bucketfile = supabase.storage.from_('blastDBs').download('Cannabis_sativa/%s' % filename)
+                            bucketfile = supabase.storage.from_('blastDBs').download('Cannabis_sativa/%s' % fasta_file)
                             f.write(bucketfile)
 
-                            outfile = op.join(os.getcwd(), variant_file.name.split('.')[0] + '_plusFasta.tab')
-                            extract_fasta(fasta=op.join(dirtemp, filename), range=seq_range, allele_info=allele_info,
-                                          output=outfile, infile_dict=inf_dict)
+                            dataf = extract_fasta(fasta=op.join(dirtemp, fasta_file), range=seq_range,
+                                                  allele_info=allele_info,
+                                                  infile_dict=inf_dict)
+
+                            dataf_csv = dataf.to_csv(header=True, index=False, sep='\t')
+
+                            fname = '%s_plusFasta.tab' % variant_file.name.split('.')[0]
+
+                            outfile = op.join(os.getcwd(), fname)
+                            with open(outfile, 'w') as out:
+                                out.write(dataf_csv)
 
                             st.success('Results are saved in %s' % outfile)
-
 
     with tab5:
         iframe_src = "http://localhost/jbrowse-1.16.11/?data=data%2Fjson%2F{0}%2Fcs10&loc=Cs10.Chr07%3A1..71238074&tracks=cs10%2Ccannabis-cs10_genes&highlight=".format(
@@ -249,7 +247,6 @@ def generate_page(species):
         components.iframe(iframe_src, width=1000, height=500, scrolling=True)
         st.write('[Open in Jbrowse](%s)' % iframe_src)
     with tab6:
-
         st.markdown("<h3 style='text-align: center; color: white;'> Expression Data </h3>", unsafe_allow_html=True)
         st.markdown("<br></br>", unsafe_allow_html=True)
 
