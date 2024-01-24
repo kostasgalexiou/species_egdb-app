@@ -264,27 +264,16 @@ def generate_page(species):
             allele_info = st.radio('Do you have REF and ALT allele information in the input file?',
                                    options=['yes', 'no'], index=0, horizontal=True)
 
-            # Examples
-            df = pd.DataFrame({'x': list(range(10)), 'y': list(range(10))})
-
             run_analysis = st.button('Get fasta sequences')
             if run_analysis:
                 with st.spinner('Please wait...'):
                     df_to_download = extract_function(v_file=variant_file, dirtemp=os.getcwd(), ffile=fasta_file,
                                                       srange=seq_range, ainfo=allele_info)
-                    # csv_to_save = extract_function(v_file=variant_file, dirtemp=os.getcwd(), ffile=fasta_file,
-                    #                                srange=seq_range, ainfo=allele_info)
 
-                    # fname = '%s_plusFasta.tab' % variant_file.name.split('.')[0]
+                    fname = '%s_plusFasta.tab' % variant_file.name.split('.')[0]
 
-                    tmp_download_link = download_link(df_to_download, 'YOUR_DF.csv', 'Click here to download your data!')
+                    tmp_download_link = download_link(df_to_download, fname, 'Click here to download your data!')
                     st.markdown(tmp_download_link, unsafe_allow_html=True)
-
-
-                # if dataf_csv:
-                #     downl = st.download_button('download', data=dataf_csv, file_name=fname)
-                #     if downl:
-                #         st.success('Results are saved in %s' % outfile)
 
     with tab5:
         iframe_src = "http://localhost/jbrowse-1.16.11/?data=data%2Fjson%2F{0}%2Fcs10&loc=Cs10.Chr07%3A1..71238074&tracks=cs10%2Ccannabis-cs10_genes&highlight=".format(
