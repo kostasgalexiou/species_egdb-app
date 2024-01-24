@@ -246,7 +246,7 @@ def generate_page(species):
                                         key='varfilewidget_%s' % species.split(' ')[0])
 
         if variant_file:
-            extract_function(v_file=variant_file, dirtemp='')
+            extract_function(v_file=variant_file, dirtemp=os.getcwd())
 
                 # if dataf_csv:
                 #     downl = st.download_button('download', data=dataf_csv, file_name=fname)
