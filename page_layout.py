@@ -266,12 +266,12 @@ def generate_page(species):
 
             # Examples
             df = pd.DataFrame({'x': list(range(10)), 'y': list(range(10))})
-            df_to_download = extract_function(v_file=variant_file, dirtemp=os.getcwd(), ffile=fasta_file,
-                                              srange=seq_range, ainfo=allele_info)
 
             run_analysis = st.button('Get fasta sequences')
             if run_analysis:
                 with st.spinner('Please wait...'):
+                    df_to_download = extract_function(v_file=variant_file, dirtemp=os.getcwd(), ffile=fasta_file,
+                                                      srange=seq_range, ainfo=allele_info)
                     # csv_to_save = extract_function(v_file=variant_file, dirtemp=os.getcwd(), ffile=fasta_file,
                     #                                srange=seq_range, ainfo=allele_info)
 
